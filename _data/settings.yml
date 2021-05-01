@@ -56,6 +56,13 @@ experience:
 education-title: Education
 education:
   - {
+      degree: Sanbercode,
+      years: 2019,
+      organization: Laravel Web Development,
+      # description:
+    }
+
+  - {
       degree: Universitas Gadjah Mada,
       years: 2014 - 2019,
       organization: Electrical Engineering,
@@ -87,11 +94,9 @@ projects:
 # Social Settings
 
 social:
-  - { link: 'https://facebook.com', icon: ion-logo-facebook }
-  - { link: 'https://twitter.com', icon: ion-logo-twitter }
-  - { link: 'https://dribbble.com', icon: ion-logo-dribbble }
-  - { link: 'https://linkedin.com', icon: ion-logo-linkedin }
-  - { link: 'https://github.com', icon: ion-logo-github }
+  - { link: 'https://linkedin.com/in/drekunia', icon: ion-logo-linkedin }
+  - { link: 'https://github.com/drekunia', icon: ion-logo-github }
+  - { link: 'https://instagram.com/drekunia', icon: ion-logo-instagram }
 
 # social network icons available (https://ionicons.com/): 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' /
 
