@@ -46,7 +46,7 @@ image: 01.jpg
       {% for i in (1..1) %}
       <li class="experience-item">
         <h3 class="company-name">{{ experience.company-name }} / <span class="duration">{{ experience.duration }}</span></h3>
-        <h5 class="job-position">{{ experience.job-position }}:</h5>
+        <h5 class="job-position">{{ experience.job-position }}</h5>
         <div class="experience-description">{{ experience.description }}</div>
       </li>
       {% endfor %}
@@ -66,7 +66,7 @@ image: 01.jpg
         {% for i in (1..1) %}
         <li class="education-item">
           <h3 class="degree">{{ education.degree }} / <span class="years">{{ education.years }}</span></h3>
-          <h5 class="organization">{{ education.organization }}:</h5>
+          <h5 class="organization">{{ education.organization }}</h5>
           <div class="education-description">{{ education.description }}</div>
         </li>
         {% endfor %}
@@ -75,10 +75,10 @@ image: 01.jpg
 </div>
 <!-- end education -->
 
-<hr>
+<!-- <hr> -->
 
 <!-- begin clients -->
-<div class="clients">
+<!-- <div class="clients">
   <h2 class="clients-title section-title"><i class="ion ion-ios-person"></i> {{ site.data.settings.clients-title
   }}</h2>
   <div class="clients-box">
@@ -96,5 +96,5 @@ image: 01.jpg
       {% endfor %}
     </ul>
   </div>
-</div>
+</div> -->
 <!-- end clients -->

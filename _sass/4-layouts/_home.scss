@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-color: lighten($dark, 70%);
   &:before {
-    content: "";
+    content: '';
     display: block;
     padding-bottom: 35%;
   }
@@ -76,7 +76,6 @@
   .user-name {
     display: block;
     font-size: 27px;
-    text-transform: uppercase;
   }
   .user-job {
     font-size: 14px;
@@ -87,7 +86,7 @@
 .user-description {
   max-width: 600px;
   margin: 0 auto 40px;
-  font-size: 21px;
+  font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 27px;
 }
@@ -120,6 +119,7 @@
 }
 
 // Experience and Education
+
 .experience-item,
 .education-item {
   margin-bottom: 40px;
@@ -129,7 +129,7 @@
   .company-name,
   .degree {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     font-size: 16px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -202,13 +202,12 @@
   button {
     width: 30px;
     height: 4px;
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
     border: 0;
     background-color: lighten($gray, 40%);
     outline: 0;
     cursor: pointer;
   }
-
 }
 
 .dots-item-active {
@@ -222,10 +221,8 @@
   }
 }
 
-
 // CSS Page Transitions
 .animated {
-
   &.is-exiting {
     .animate-main {
       animation-direction: alternate-reverse;
@@ -233,40 +230,40 @@
   }
   .animate-main {
     -webkit-animation-duration: 0.25s;
-            animation-duration: 0.25s;
+    animation-duration: 0.25s;
     -webkit-transition-timing-function: ease-in;
-        -o-transition-timing-function: ease-in;
-            transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
     -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+    animation-fill-mode: both;
   }
 
   .animate-hero {
     -webkit-animation-duration: 0.7s;
-            animation-duration: 0.7s;
+    animation-duration: 0.7s;
     -webkit-transition-timing-function: ease-in;
-        -o-transition-timing-function: ease-in;
-            transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
     -webkit-animation-fill-mode: both;
-            animation-fill-mode: both;
+    animation-fill-mode: both;
   }
 
   /** An element that fades in */
   .animate-element--fadein {
     -webkit-animation-name: fadeIn;
-            animation-name: fadeIn;
+    animation-name: fadeIn;
   }
 
   /** An element that fades in and slides up */
   .animate-element--fadeinup {
     -webkit-animation-name: fadeInUp;
-            animation-name: fadeInUp;
+    animation-name: fadeInUp;
   }
 
   /** An element that fades in and slides from the right */
   .animate-element--fadeinright {
     -webkit-animation-name: fadeInRight;
-            animation-name: fadeInRight;
+    animation-name: fadeInRight;
   }
 }
 
@@ -310,25 +307,5 @@
 @media only screen and (min-width: 576px) {
   .chart-item {
     flex-basis: 33.333%;
-  }
-  
-  .experience-item,
-  .education-item {
-  .company-name,
-  .degree {
-      padding-left: 20px;
-      &:after {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        display: block;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: $red;
-      }
-    }
   }
 }
