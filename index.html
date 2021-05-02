@@ -45,7 +45,8 @@ image: 01.jpg
     {% for experience in site.data.settings.experience %}
       {% for i in (1..1) %}
       <li class="experience-item">
-        <h3 class="company-name">{{ experience.company-name }} / <span class="duration">{{ experience.duration }}</span></h3>
+        <h3 class="company-name">{{ experience.company-name }}</h3>
+        <div class="duration">{{ experience.duration }}</div>
         <h5 class="job-position">{{ experience.job-position }}</h5>
         <div class="experience-description">{{ experience.description }}</div>
       </li>
@@ -65,7 +66,8 @@ image: 01.jpg
       {% for education in site.data.settings.education %}
         {% for i in (1..1) %}
         <li class="education-item">
-          <h3 class="degree">{{ education.degree }} / <span class="years">{{ education.years }}</span></h3>
+          <h3 class="degree">{{ education.degree }}</h3>
+          <div class="years">{{ education.years }}</div>
           <h5 class="organization">{{ education.organization }}</h5>
           <div class="education-description">{{ education.description }}</div>
         </li>

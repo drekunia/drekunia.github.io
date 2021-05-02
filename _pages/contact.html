@@ -6,7 +6,7 @@ permalink: /contact/
 ---
 <!-- begin form-box -->
 <div class="form-box">
-  <form class="form" method="POST" action="{% if site.data.settings.email %}https://formspree.io/{{site.data.settings.email}}{% else %}#{% endif %}">
+  <form class="form" id="my-form" method="POST" action="{% if site.data.settings.email-endpoint %}{{site.data.settings.email-endpoint}}{% else %}#{% endif %}">
     <div class="form-group">
       <div class="form-item form-name">
         <label for="">Your Name</label>
@@ -23,6 +23,7 @@ permalink: /contact/
     </div>
     <div class="form-item">
       <button class="form-button" type="submit">Send</button>
+      <!-- <p id="my-form-status" style="display: inline-block; margin-left: 15px;"></p> -->
     </div>
   </form>
 </div>

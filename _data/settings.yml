@@ -3,6 +3,7 @@
 # General Site Settings
 
 title: Andre Kurniawan | Backend Developer
+email-endpoint: https://formspree.io/f/mknkobdw
 
 # Here you can add link in main menu
 menu:
@@ -27,7 +28,7 @@ skills:
   - { name: PHP (Laravel), value: '90' }
   - { name: Elixir (Phoenix), value: '85' }
   - { name: Go, value: '75' }
-  - { name: SQL, value: '70' }
+  - { name: SQL, value: '80' }
   - { name: Wordpress, value: '90' }
   - { name: Git, value: '90' }
 
@@ -37,14 +38,14 @@ skills:
 experience-title: Experience
 experience:
   - {
-      company-name: 'PT. Ilmu Data Terpadu (Jakarta, ID)',
+      company-name: 'PT. Ilmu Data Terpadu',
       duration: May 2020 - May 2021,
       job-position: Full Stack Developer,
       description: 'Responsible for developing Kuponsehat.com, a marketplace for medical services, using Elixir, Phoenix Framework, Tailwind CSS, and PostgreSQL.',
     }
 
   - {
-      company-name: 'Dafunda Media (Aceh, ID)',
+      company-name: 'Dafunda Media',
       duration: Jun 2019 - May 2020,
       job-position: Web Developer,
       description: 'Responsible for creating news and media websites using Laravel, and also Wordpress custom themes. I also wrote articles in English.',
@@ -65,7 +66,7 @@ education:
   - {
       degree: Universitas Gadjah Mada,
       years: 2014 - 2019,
-      organization: Electrical Engineering,
+      organization: Electrical Engineering (Undergraduate Program),
       # description:
     }
 
@@ -102,7 +103,7 @@ social:
 
 #-------------------------------
 # Comment Section (Disqus)
-disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
+disqus-identifier: drekunia # Add your shortname for Disqus Comment. For example mr-brown
 
 #-------------------------------
 # Google Analytics Section
