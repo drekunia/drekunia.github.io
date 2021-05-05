@@ -4,7 +4,10 @@
 <script src="{{ site.baseurl }}/js/jquery.easypiechart.min.js"></script>
 <script src="{{ site.baseurl }}/js/jquery.smoothState.min.js"></script>
 <script src="{{ site.baseurl }}/js/sweetalert2.all.min.js"></script>
-<script src="{{ site.baseurl }}/js/contact-email-ajax.js"></script>
+<script src="{{ site.baseurl }}/js/contactLoadScript.js"></script>
+{% if request.request_uri.tr('/') == "contact" || %}
+<script src="{{ site.baseurl }}/js/contactEmailAjax.js"></script>
+{% endif %}
 <script src="{{ site.baseurl }}/js/slick.min.js"></script>
 <script src="{{ site.baseurl }}/js/featherlight.min.js"></script>
 <script src="{{ site.baseurl }}/js/jquery.fitvids.js"></script>
