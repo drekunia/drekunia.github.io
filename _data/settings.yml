@@ -3,7 +3,7 @@
 # General Site Settings
 
 title: Andre Kurniawan | Backend Developer
-email-endpoint: https://formspree.io/f/mknkobdw
+# email-endpoint: https://formspree.io/f/xxxxxxxx
 
 # Here you can add link in main menu
 menu:
@@ -27,7 +27,7 @@ skills-title: Skills
 skills:
   - { name: PHP (Laravel), value: '90' }
   - { name: Elixir (Phoenix), value: '85' }
-  - { name: Go, value: '75' }
+  - { name: Go, value: '80' }
   - { name: SQL, value: '80' }
   - { name: Wordpress, value: '90' }
   - { name: Git, value: '90' }
