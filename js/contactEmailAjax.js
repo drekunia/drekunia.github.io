@@ -19,7 +19,7 @@ function handleSubmit() {
         'error'
       );
     } else {
-      status.innerHTML = '<i>Sent</i>';
+      status.innerHTML = '<i>Sent!</i>';
       Swal.fire('Thank you!', 'Thanks for your submission', 'success');
       form.reset();
     }
