@@ -12,15 +12,15 @@ function handleSubmit() {
     },
   }).then((response) => {
     if (response.status !== 200) {
-      status.innerHTML = 'An error has occurred.';
+      status.innerHTML = "<i>An error has occurred</i>";
       Swal.fire(
         'Oops...',
-        "There was a problem submitting your form.<br>Please send your email to <a href='mailto:drekunia@gmail.com'>drekunia@gmail.com</a>.",
+        "There was a problem submitting your form<br>Please send your email to <a href='mailto:drekunia@gmail.com'>drekunia@gmail.com</a>",
         'error'
       );
     } else {
-      status.innerHTML = 'Sent!';
-      Swal.fire('Thank you!', 'Thanks for your submission.', 'success');
+      status.innerHTML = '<i>Sent</i>';
+      Swal.fire('Thank you!', 'Thanks for your submission', 'success');
       form.reset();
     }
   });
