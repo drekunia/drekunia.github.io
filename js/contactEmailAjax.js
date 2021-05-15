@@ -1,9 +1,9 @@
-function handleSubmit(event) {
-  event.preventDefault();
+function handleSubmit() {
+  e.preDefault();
 
   var status = document.getElementById('my-form-status');
-  var data = new FormData(event.target);
-  fetch(event.target.action, {
+  var data = new FormData(e.target);
+  fetch(e.target.action, {
     method: form.method,
     body: data,
     headers: {
