@@ -6,7 +6,7 @@ permalink: /contact/
 ---
 <!-- begin form-box -->
 <div class="form-box">
-  <form class="form" id="my-form" method="POST" action="{% if site.data.settings.email-endpoint %}{{site.data.settings.email-endpoint}}{% else %}#{% endif %}">
+  <form class="form" id="email-form" method="POST" action="{% if site.data.settings.email-endpoint %}{{site.data.settings.email-endpoint}}{% else %}#{% endif %}">
     <div class="form-group">
       <div class="form-item form-name">
         <label for="">Your Name</label>
