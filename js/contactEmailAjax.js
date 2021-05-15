@@ -9,18 +9,18 @@ function handleSubmit(event) {
     headers: {
       Accept: 'application/json',
     },
-  })
-    .then((response) => {
+    success: function () {
       status.innerHTML = 'Sent!';
       Swal.fire('Thank you!', 'Thanks for your submission.', 'success');
       form.reset();
-    })
-    .catch((error) => {
+    },
+    error: function () {
       status.innerHTML = 'An error has occurred.';
       Swal.fire(
         'Oops...',
-        'There was a problem submitting your form.',
+        'There was a problem submitting your form.<br>Just email to drekunia@gmail.com from your email client.',
         'error'
       );
-    });
+    },
+  });
 }
