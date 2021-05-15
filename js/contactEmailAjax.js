@@ -1,9 +1,10 @@
 function handleSubmit() {
-  e.preDefault();
+  event.preventDefault();
 
   var status = document.getElementById('my-form-status');
-  var data = new FormData(e.target);
-  fetch(e.target.action, {
+  let form = document.getElementById('email-form');
+  var data = new FormData(form);
+  fetch(form.action, {
     method: form.method,
     body: data,
     headers: {
