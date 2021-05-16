@@ -39,6 +39,11 @@
       &:hover {
         background: $dark;
       }
+      &:disabled {
+        background: $lightgray;
+        color: $gray;
+        pointer-events: none;
+      }
     }
   }
 

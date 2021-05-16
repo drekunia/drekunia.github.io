@@ -5,25 +5,25 @@ image: 03.jpg
 permalink: /contact/
 ---
 <!-- begin form-box -->
-<div class="form-box">
+<div class="form-box" onkeyup="validateForm()">
   <form class="form" id="email-form" method="POST" action="{% if site.data.settings.email-endpoint %}{{site.data.settings.email-endpoint}}{% else %}#{% endif %}">
     <div class="form-group">
       <div class="form-item form-name">
-        <label for="">Your Name</label>
-        <input type="text" name="name" required>
+        <label for="name">Your Name</label>
+        <input type="text" name="name" id="name" required>
       </div>
       <div class="form-item form-email">
-        <label for="">Your Email</label>
-        <input type="email" name="email" required>
+        <label for="email">Your Email</label>
+        <input type="email" name="email" id="email" required>
       </div>
     </div>
     <div class="form-item">
-      <label for="">Tell me about your project</label>
-      <textarea name="text" id="" cols="30" rows="10" required></textarea>
+      <label for="text">Tell me about your project</label>
+      <textarea name="text" id="text" cols="30" rows="10" required></textarea>
     </div>
-    <div class="form-item">
-      <button class="form-button submit-button" id="submit-email" onclick="handleSubmit()" type="submit">Send</button>
-      <div id="my-form-status" style="display: inline-block; margin-left: 15px;"></div>
+    <div class="form-item disable-select">
+      <button class="form-button submit-button" id="submit-email" onclick="handleSubmit()" type="submit" disabled>Fill out form</button>
+      <div id="email-form-status" style="display: inline-block; margin-left: 15px;"></div>
     </div>
   </form>
 </div>

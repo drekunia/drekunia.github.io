@@ -38,14 +38,14 @@ skills:
 experience-title: Experience
 experience:
   - {
-      company-name: 'PT. Ilmu Data Terpadu',
+      company-name: 'PT. Ilmu Data Terpadu (Jakarta, ID)',
       duration: May 2020 - May 2021,
       job-position: Full Stack Developer,
       description: 'Responsible for developing Kuponsehat.com, a marketplace for medical services, using Elixir, Phoenix Framework, Tailwind CSS, and PostgreSQL.',
     }
 
   - {
-      company-name: 'Dafunda Media',
+      company-name: 'Dafunda Media (Aceh, ID)',
       duration: Jun 2019 - May 2020,
       job-position: Web Developer,
       description: 'Responsible for creating news and media websites using Laravel, and also Wordpress custom themes. I also wrote articles in English.',

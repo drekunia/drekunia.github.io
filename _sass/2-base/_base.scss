@@ -6,7 +6,9 @@ $base-font-weight: normal;
 $base-font-family: 'Nunito', sans-serif;
 $base-line-height: 28px;
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -19,20 +21,21 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  input, textarea {
-		border: $border-color 1px solid;
-		outline: none;
-		&:focus:required:invalid {
-			border-color: $danger;
-		}
-		&:required:valid {
-			border-color: $success;
-		}
-	}
+  input,
+  textarea {
+    border: $border-color 1px solid;
+    outline: none;
+    &:focus:required:invalid {
+      border-color: $danger;
+    }
+    &:required:valid {
+      border-color: $success;
+    }
+  }
 }
 
 ::placeholder {
-	color: #666;
+  color: #666;
 }
 
 *::selection {
@@ -40,17 +43,29 @@ body {
   background-color: $red;
 }
 
+.disable-select {
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  ::selection {
+    color: none;
+    background-color: none;
+  }
+}
 
 // Headings
 $heading-font-weight: 600;
-$heading-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+$heading-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue,
+  Helvetica, Arial, sans-serif;
 
-$font-size-h1:  36px;
-$font-size-h2:  28px;
-$font-size-h3:  24px;
-$font-size-h4:  20px;
-$font-size-h5:  18px;
-$font-size-h6:  16px;
+$font-size-h1: 36px;
+$font-size-h2: 28px;
+$font-size-h3: 24px;
+$font-size-h4: 20px;
+$font-size-h5: 18px;
+$font-size-h6: 16px;
 
 $heading-line-height: 1.2;
 
@@ -87,10 +102,10 @@ h6 {
   font-size: $font-size-h6;
 }
 
-p, figure {
+p,
+figure {
   margin-bottom: 30px;
 }
-
 
 // Blockquote
 blockquote {
@@ -111,7 +126,6 @@ pre {
   word-break: break-all;
 }
 
-
 // Images
 img {
   max-width: 100%;
@@ -119,16 +133,15 @@ img {
   vertical-align: middle;
 }
 
-
 // Links
 a {
-    text-decoration: none;
-    color: $link-color;
-    transition: $global-transition;
+  text-decoration: none;
+  color: $link-color;
+  transition: $global-transition;
 
-    &:hover {
-        color: $link-color-hover;
-    }
+  &:hover {
+    color: $link-color-hover;
+  }
 }
 
 // Hr
