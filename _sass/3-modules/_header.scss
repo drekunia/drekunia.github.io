@@ -105,7 +105,7 @@
     .menu-list {
       flex-direction: row;
       overflow: visible;
-      
+
       .menu-item {
         width: 25%;
         max-height: 100%;
@@ -123,7 +123,7 @@
         border-bottom: none;
         &--active {
           &:after {
-            content: "";
+            content: '';
             position: absolute;
             bottom: -5px;
             left: 50%;

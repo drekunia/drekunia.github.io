@@ -1,81 +1,75 @@
 // Text Alignment
 .text-left {
-	text-align: left;
+  text-align: left;
 }
 
 .text-right {
-	text-align: right;
+  text-align: right;
 }
 
 .text-center {
-	text-align: center;
+  text-align: center;
 }
 
 .text-justify {
-	text-align: justify;
+  text-align: justify;
 }
-
 
 // Display
 .block {
-	display: block;
+  display: block;
 }
 
 .inline-block {
-	display: inline-block;
+  display: inline-block;
 }
 
 .inline {
-	display: inline;
+  display: inline;
 }
-
 
 // Vertical Center
 .vertical-center {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 // Display State
 .show {
-	display: block;
+  display: block;
 }
 
 .hide {
-	display: none;
+  display: none;
 }
 
 .invisible {
-	visibility: hidden;
+  visibility: hidden;
 }
-
 
 // Floats
 .float-left {
-	float: left;
+  float: left;
 }
 
 .float-right {
-	float: right;
+  float: right;
 }
-
 
 // Padding
 .no-padding {
-	padding: 0;
+  padding: 0;
 }
-
 
 // Margins
 .no-margin {
-	margin: 0;
+  margin: 0;
 }
 
 // Lists Reset
 .list-reset {
-	@include list-reset();
+  @include list-reset();
 }
 
 // Clearfix
@@ -85,5 +79,5 @@
 
 // Screen Reader
 .screen-reader-text {
-	@include screen-reader();
+  @include screen-reader();
 }
