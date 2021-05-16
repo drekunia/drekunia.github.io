@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://drekunia.netlify.com"
+  to = "https://drekunia.com"
+  status = 301
+  force = true
