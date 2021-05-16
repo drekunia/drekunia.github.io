@@ -33,7 +33,7 @@ function validateForm() {
       buttonText = 'Send';
     } else {
       button.disabled = true;
-      buttonText = 'Fill out form';
+      buttonText = 'Fill in';
     }
   });
 
