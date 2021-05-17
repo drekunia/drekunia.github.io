@@ -7,7 +7,7 @@ email-endpoint: https://formspree.io/f/mgerazaw
 
 # Here you can add link in main menu
 menu:
-  - { name: Work, url: 'work' }
+  - { name: Portfolio, url: 'portfolio' }
   - { name: Blog, url: 'blog' }
   - { name: Contact, url: 'contact' }
 
