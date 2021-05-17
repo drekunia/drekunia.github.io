@@ -78,7 +78,7 @@
     font-size: 27px;
   }
   .user-job {
-    font-size: 14px;
+    font-size: 16px;
     color: $gray;
   }
 }
@@ -130,10 +130,10 @@
   .degree {
     position: relative;
     margin-bottom: 5px;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: $red;
+    color: $darkgreen;
   }
   .duration,
   .years {
@@ -147,12 +147,12 @@
   .job-position,
   .organization {
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
   }
   .experience-description,
   .education-description {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 21px;
     color: $gray;
   }
@@ -198,7 +198,7 @@
     font-size: 0;
     &.slick-active {
       button {
-        background: $red;
+        background: $darkgreen;
       }
     }
   }
@@ -215,7 +215,7 @@
 }
 
 .dots-item-active {
-  background: $red;
+  background: $darkgreen;
 }
 
 // Media

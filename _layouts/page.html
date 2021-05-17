@@ -7,7 +7,7 @@ layout: default
 
 	<!-- begin page-section -->
 	<div class="page-section">
-		<h1 class="page-title">{{ page.title | escape }}</h1>
+		<h1 class="page-title">{% if page.heading %}{{ page.heading}}{% else %}{{ page.title | escape }}{% endif %}</h1>
 		<div class="page-content">
 			{{ content }}
 		</div>
