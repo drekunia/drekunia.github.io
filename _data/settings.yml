@@ -103,9 +103,8 @@ social:
 # social network icons available (https://ionicons.com/): 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' /
 
 #-------------------------------
-# Comment Section (Disqus)
-disqus-identifier: drekunia # Add your shortname for Disqus Comment. For example mr-brown
-
+# Comment Section (Facebook)
+fb-comment-appid: 538032817604026
 #-------------------------------
 # Google Analytics Section
 
