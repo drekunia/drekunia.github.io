@@ -103,7 +103,7 @@ $(document).ready(function () {
     options = {
       debug: true,
       prefetch: true,
-      blacklist: '.work-popup-link .no-smmothstate',
+      blacklist: '.work-popup-link',
       cacheLength: 2,
       onStart: {
         duration: 250, // Duration of our animation
