@@ -1,4 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-
-# https://drekunia.netlify.app https://drekunia.com 301!
-# https://drekunia.netlify.app/* https://drekunia.com/:splat 301!
