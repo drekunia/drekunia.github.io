@@ -1,10 +1,10 @@
 $primary-color: #3c2b38;
-$red: #c74343;
-$lightred:#AE4D4D;
+$darkgreen: #3a6b6b;
+$lightred: #ae4d4d;
 $gray: #666666;
 $lightgray: #f3f3f3;
-$dark: #2F2C36;
-$white:#FFFFFF;
+$dark: #2f2c36;
+$white: #ffffff;
 
 $accent-color: #000000;
 
@@ -21,7 +21,7 @@ $text-color: $dark;
 $heading-font-color: $dark;
 
 // Links
-$link-color: $red;
+$link-color: $darkgreen;
 $link-color-hover: darken($dark, 15%);
 
 // Button
@@ -29,4 +29,4 @@ $button-color: $white;
 $button-background-color: $primary-color;
 
 // Border
-$border-color: #A84496;
+$border-color: #a84496;

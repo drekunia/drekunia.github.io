@@ -3,7 +3,7 @@ $base-font-size: 16px;
 $base-font-style: normal;
 $base-font-variant: normal;
 $base-font-weight: normal;
-$base-font-family: 'Nunito', sans-serif;
+$base-font-family: 'Lato', sans-serif;
 $base-line-height: 28px;
 
 *,
@@ -40,7 +40,7 @@ body {
 
 *::selection {
   color: $white;
-  background-color: $red;
+  background-color: $darkgreen;
 }
 
 .disable-select {

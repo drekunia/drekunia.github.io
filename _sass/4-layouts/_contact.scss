@@ -34,10 +34,10 @@
       outline: none;
       cursor: pointer;
       color: $white;
-      background: $red;
+      background: $darkgreen;
       transition: $global-transition;
       &:hover {
-        background: $dark;
+        background: darken($darkgreen, 15%);
       }
       &:disabled {
         background: $lightgray;
