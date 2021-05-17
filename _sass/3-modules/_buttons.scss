@@ -25,3 +25,16 @@
     width: 100%;
   }
 }
+
+.full-button {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: $white;
+  background: $darkgreen;
+  transition: $global-transition;
+}
