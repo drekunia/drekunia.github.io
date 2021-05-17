@@ -15,8 +15,11 @@
       a {
         color: rgba($white, 0.5);
         &:hover {
-          color: $red;
+          color: $darkgreen;
         }
+      }
+      i {
+        color: inherit;
       }
     }
   }

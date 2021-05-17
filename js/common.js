@@ -45,8 +45,8 @@ $(document).ready(function() {
               var ctx = this.renderer.getCtx();
               var canvas = this.renderer.getCanvas();
               var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
-              gradient.addColorStop(0, "#FFA7A7");
-              gradient.addColorStop(1, "#FF2828"); 
+              gradient.addColorStop(0, "#8fbfbf");
+              gradient.addColorStop(1, "#158a8a"); 
               return gradient;
             }
           });
