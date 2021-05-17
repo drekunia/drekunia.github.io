@@ -2,14 +2,14 @@
 #-------------------------------
 # General Site Settings
 
-title: Andre Kurniawan | Backend Developer
+title: Andre Kurniawan
 email-endpoint: https://formspree.io/f/mgerazaw
 
 # Here you can add link in main menu
 menu:
-  - { name: Work, url: 'work', icon: 'ion ion-ios-briefcase' }
-  - { name: Blog, url: 'blog', icon: 'ion ion-ios-paper' }
-  - { name: Contact, url: 'contact', icon: 'ion ion-ios-mail' }
+  - { name: Work, url: 'work' }
+  - { name: Blog, url: 'blog' }
+  - { name: Contact, url: 'contact' }
 
 #-------------------------------
 # About Section
@@ -98,6 +98,7 @@ social:
   - { link: 'https://linkedin.com/in/drekunia', icon: ion-logo-linkedin }
   - { link: 'https://github.com/drekunia', icon: ion-logo-github }
   - { link: 'https://instagram.com/drekunia', icon: ion-logo-instagram }
+  - { link: 'https://www.facebook.com/drekunia', icon: ion-logo-facebook }
 
 # social network icons available (https://ionicons.com/): 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' /
 
