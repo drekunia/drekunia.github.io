@@ -158,8 +158,8 @@ $(document).ready(function () {
                           canvas.width,
                           0
                         );
-                        gradient.addColorStop(0, '#FFA7A7');
-                        gradient.addColorStop(1, '#FF2828');
+                        gradient.addColorStop(0, '#8fbfbf');
+                        gradient.addColorStop(1, '#158a8a');
                         return gradient;
                       },
                     });
