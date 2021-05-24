@@ -57,8 +57,8 @@ body {
 
 // Headings
 $heading-font-weight: 600;
-$heading-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue,
-  Helvetica, Arial, sans-serif;
+$heading-font-family: 'Open Sans', 'Lato', -apple-system, BlinkMacSystemFont,
+  Helvetica Neue, Helvetica, Arial, sans-serif;
 
 $font-size-h1: 36px;
 $font-size-h2: 28px;
@@ -76,6 +76,7 @@ h4,
 h5,
 h6 {
   line-height: initial;
+  font-family: $heading-font-family;
 }
 
 h1 {

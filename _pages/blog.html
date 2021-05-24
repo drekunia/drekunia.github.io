@@ -12,12 +12,13 @@ permalink: /blog/
 		<article class="article">
 			<div class="article-content">
 				<div class="article-info">
-					<span class="article-date"><time datetime="{{ post.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}{{ post.date | date: date_format }}</time></span>&nbsp;&nbsp;—&nbsp;&nbsp;
+					<span class="article-date"><time datetime="{{ post.date | date_to_xmlschema }}">{% assign date_format = site.minima.date_format | default: "%B %-d, %Y" %}{{ post.date | date: date_format }}</time></span>
+					&nbsp;&nbsp;—&nbsp;&nbsp;
 					<span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words |
 						plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
 				</div>
 				<h2 class="article-title">
-					<a href="{{ post.url | prepend: site.baseurl }}" onclick="window.location.replace('{{ post.url | prepend: site.baseurl }}')">{{post.title}}</a>
+					<a href="{{ post.url | prepend: site.baseurl }}" onclick="event.preventDefault();window.location.replace('{{ post.url | prepend: site.baseurl }}')">{{post.title}}</a>
 				</h2>
 				<p class="article-excerpt">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | truncatewords: 25 }}{% endif %}</p>
 			</div>
@@ -29,7 +30,7 @@ permalink: /blog/
 
 	{% endfor %}
 	{% else %}
-	<h2 class="no-article">
+	<div class="no-article">
 		No posts yet
-	</h2>
+	</div>
 {% endif %}
