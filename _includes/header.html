@@ -12,7 +12,7 @@
       {% for url in site.data.settings.menu %}
       {% assign class = nil %}
       {% if page.url contains url.url %}
-      {% assign class = ' menu-link--active' %}
+      {% assign class = 'menu-link--active' %}
       {% endif %}
       <li class="menu-item"><a href="{{ site.baseurl }}/{{ url.url }}" class="menu-link {{ class }}"
           id="{{ url.url }}-nav">
