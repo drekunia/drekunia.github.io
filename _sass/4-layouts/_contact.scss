@@ -42,7 +42,8 @@
       &:disabled {
         background: $lightgray;
         color: $gray;
-        pointer-events: none;
+        cursor: not-allowed;
+        pointer-events: all !important;
       }
     }
   }
