@@ -90,13 +90,13 @@ education:
 #-------------------------------
 # Work Section
 
-projects:
-  - { name: Design Talks, image: '10.jpg' }
-  - { name: Abstract Page, image: '11.jpg' }
-  - { name: Round Shapes, image: '12.jpg' }
-  - { name: Color Palette, image: '13.jpg' }
-  - { name: Color Palette, image: '14.jpg' }
-  - { name: Color Palette, image: '15.jpg' }
+# projects:
+#   - { name: Design Talks, image: '10.jpg' }
+#   - { name: Abstract Page, image: '11.jpg' }
+#   - { name: Round Shapes, image: '12.jpg' }
+#   - { name: Color Palette, image: '13.jpg' }
+#   - { name: Color Palette, image: '14.jpg' }
+#   - { name: Color Palette, image: '15.jpg' }
 
 #-------------------------------
 # Social Settings
