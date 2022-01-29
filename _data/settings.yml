@@ -16,8 +16,8 @@ menu:
 
 avatar: 05.jpg
 name: Andre Kurniawan
-my-job: Backend Developer
-description: Backend developer currently focusing on Go. Experienced with Elixir (Phoenix Framework), PHP (Laravel), PostgreSQL, MySQL, Git, Tailwind CSS, and Wordpress. Also interested in frontend development.
+my-job: Backend Engineer
+description: Backend guy who code in Elixir, Go, Javascript, and PHP. Interested in blockchain development.
 email: drekunia@gmail.com
 
 #-------------------------------
@@ -25,18 +25,25 @@ email: drekunia@gmail.com
 
 skills-title: Skills
 skills:
-  - { name: PHP (Laravel), value: '90' }
-  - { name: Elixir (Phoenix), value: '85' }
-  - { name: Go, value: '80' }
-  - { name: SQL, value: '80' }
-  - { name: Wordpress, value: '90' }
-  - { name: Git, value: '90' }
+  - { name: Elixir, value: '90' }
+  - { name: Go, value: '75' }
+  - { name: Javascript, value: '75' }
+  - { name: PHP, value: '80' }
+  - { name: SQL, value: '70' }
+  - { name: Git, value: '70' }
 
 #-------------------------------
 # Experience Section
 
 experience-title: Experience
 experience:
+  - {
+      company-name: 'Tokenomy (Jakarta, ID)',
+      duration: June 2021 - Present,
+      job-position: Backend Engineer,
+      # description: 'Lorem ipsum dolor sit amet.',
+    }
+
   - {
       company-name: 'PT. Ilmu Data Terpadu (Jakarta, ID)',
       duration: May 2020 - May 2021,

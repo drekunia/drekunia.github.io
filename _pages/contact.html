@@ -10,16 +10,16 @@ permalink: /:basename
   <form class="form" id="email-form" method="POST" action="{% if site.data.settings.email-endpoint %}{{site.data.settings.email-endpoint}}{% else %}#{% endif %}">
     <div class="form-group">
       <div class="form-item form-name">
-        <label for="name">Your Name</label>
+        <label for="name">Your name</label>
         <input type="text" name="name" id="name" required>
       </div>
       <div class="form-item form-email">
-        <label for="email">Your Email</label>
+        <label for="email">Your email</label>
         <input type="email" name="email" id="email" required>
       </div>
     </div>
     <div class="form-item">
-      <label for="text">Tell me about your project</label>
+      <label for="text">Tell me something</label>
       <textarea name="text" id="text" cols="30" rows="10" required></textarea>
     </div>
     <div class="form-item disable-select">
