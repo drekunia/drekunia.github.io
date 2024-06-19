@@ -38,13 +38,12 @@ social:
   email: drekunia@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://github.com/drekunia # change to your github homepage
-    - https://twitter.com/drekunia # change to your twitter homepage
-    # Uncomment below to add more social links
+    - https://github.com/drekunia
     - https://www.linkedin.com/in/drekunia
-    - https://www.facebook.com/drekunia
+    - https://www.youtube.com/@drekunia
     - https://www.instagram.com/drekunia
-    - https://www.youtube.com/channel/UCNM9YpOeBdQQnfNYPtewj1g
+    - https://twitter.com/drekunia
+    - https://www.facebook.com/drekunia
 
 # Site Verification Settings
 webmaster_verifications:
