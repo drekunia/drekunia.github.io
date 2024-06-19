@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using Jekyll and Github Pages as CMS for Your Personal Blog"
+title: "Jekyll and Github Pages as CMS for Your Personal Blog"
 date: 2024-06-19
 categories: [Jekyll]
 tags: [Jekyll, CMS, Blogging, Static Site Generators]
