@@ -52,6 +52,7 @@ cd my-blog
 ```
 
 ### Step 3: Serve Your Site Locally
+
 Navigate to your new Jekyll site directory and start the local server:
 
 ```bash
@@ -60,9 +61,11 @@ bundle exec jekyll serve
 You can now view your site at `http://localhost:4000`.
 
 ### Step 4: Customize Your Site
+
 Jekyll's default theme is a great starting point, but you can customize it to match your style. Edit the `_config.yml` file to set your site's title, description, and other settings. Modify the `_layouts` and `_includes` directories to change the structure and design of your pages.
 
 ### Step 5: Write Your First Post
+
 Create a new Markdown file in the `_posts` directory to write your first blog post. Name the file using the format `YYYY-MM-DD-title.md`, and include the following front matter at the top:
 
 ```yaml
@@ -77,6 +80,7 @@ categories: [Introduction]
 Then, write your content in Markdown below the front matter.
 
 ### Step 6: Deploy to GitHub Pages
+
 To deploy your site to GitHub Pages, create a repository on GitHub and push your site files. Add a `.github/workflows` directory with a GitHub Actions workflow file to automate the build and deploy process. Here's a basic example of a workflow file:
 
 ```yaml
@@ -110,6 +114,7 @@ jobs:
 Commit and push your changes, and your blog will be live on GitHub Pages.
 
 ## Conclusion
+
 Jekyll offers a powerful yet straightforward solution for personal blogging. Its simplicity, customization options, and seamless GitHub Pages integration make it an excellent choice for bloggers who want control over their site's design and functionality without the overhead of traditional CMS platforms. Give Jekyll a try and enjoy the freedom of static site blogging!
 
 Happy blogging!
