@@ -18,8 +18,8 @@ tags: [Javascript, Cheat Sheet]
 
 ```javascript
 function Person(name, age) {
-  this.name = name;
-  this.age = age;
+  this.name = name;
+  this.age = age;
 }
 ```
 
@@ -29,8 +29,8 @@ function Person(name, age) {
 
 ```javascript
 function Person(name, age) {
-  this.name = name;
-  this.age = age;
+  this.name = name;
+  this.age = age;
 }
 ```
 
@@ -40,11 +40,11 @@ function Person(name, age) {
 
 ```javascript
 function Person(name, age) {
-  this.name = name;
-  this.age = age;
-  this.greet = function() {
-    return `Hello, my name is ${this.name}`;
-  };
+  this.name = name;
+  this.age = age;
+  this.greet = function() {
+    return `Hello, my name is ${this.name}`;
+  };
 }
 ```
 
@@ -54,8 +54,8 @@ function Person(name, age) {
 
 ```javascript
 function Person(name, age) {
-  this.name = name;
-  this.age = age;
+  this.name = name;
+  this.age = age;
 }
 let person1 = new Person('Alice', 30);
 ```
@@ -66,13 +66,13 @@ let person1 = new Person('Alice', 30);
 
 ```javascript
 function Person(name, age) {
-  this.name = name;
-  this.age = age;
+  this.name = name;
+  this.age = age;
 }
 
 function Student(name, age, grade) {
-  Person.call(this, name, age);
-  this.grade = grade;
+  Person.call(this, name, age);
+  this.grade = grade;
 }
 ```
 
@@ -82,7 +82,7 @@ function Student(name, age, grade) {
 
 ```javascript
 Person.prototype.sayHi = function() {
-  return `Hi, I am ${this.name}`;
+  return `Hi, I am ${this.name}`;
 };
 ```
 
@@ -101,10 +101,10 @@ Student.prototype.constructor = Student;
 
 ```javascript
 class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
 }
 ```
 
@@ -114,10 +114,10 @@ class Person {
 
 ```javascript
 class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
 }
 ```
 
@@ -127,10 +127,10 @@ class Person {
 
 ```javascript
 class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
 }
 ```
 
@@ -140,13 +140,13 @@ class Person {
 
 ```javascript
 class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
-  greet() {
-    return `Hello, my name is ${this.name}`;
-  }
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+  greet() {
+    return `Hello, my name is ${this.name}`;
+  }
 }
 ```
 
@@ -156,10 +156,10 @@ class Person {
 
 ```javascript
 class Student extends Person {
-  constructor(name, age, grade) {
-    super(name, age);
-    this.grade = grade;
-  }
+  constructor(name, age, grade) {
+    super(name, age);
+    this.grade = grade;
+  }
 }
 ```
 
@@ -169,10 +169,10 @@ class Student extends Person {
 
 ```javascript
 class Student extends Person {
-  constructor(name, age, grade) {
-    super(name, age);
-    this.grade = grade;
-  }
+  constructor(name, age, grade) {
+    super(name, age);
+    this.grade = grade;
+  }
 }
 ```
 
@@ -182,13 +182,13 @@ class Student extends Person {
 
 ```javascript
 class Student extends Person {
-  constructor(name, age, grade) {
-    super(name, age);
-    this.grade = grade;
-  }
-  study() {
-    return `${super.greet()} and I am studying`;
-  }
+  constructor(name, age, grade) {
+    super(name, age);
+    this.grade = grade;
+  }
+  study() {
+    return `${super.greet()} and I am studying`;
+  }
 }
 ```
 
@@ -198,15 +198,15 @@ class Student extends Person {
 
 ```javascript
 class Person {
-  constructor(name) {
-    this._name = name;
-  }
-  get name() {
-    return this._name;
-  }
-  set name(value) {
-    this._name = value;
-  }
+  constructor(name) {
+    this._name = name;
+  }
+  get name() {
+    return this._name;
+  }
+  set name(value) {
+    this._name = value;
+  }
 }
 ```
 
@@ -216,7 +216,7 @@ class Person {
 
 ```javascript
 class Person {
-  name = 'Alice';
+  name = 'Alice';
 }
 ```
 
@@ -226,13 +226,13 @@ class Person {
 
 ```javascript
 class Person {
-  #name;
-  constructor(name) {
-    this.#name = name;
-  }
-  getName() {
-    return this.#name;
-  }
+  #name;
+  constructor(name) {
+    this.#name = name;
+  }
+  getName() {
+    return this.#name;
+  }
 }
 ```
 
@@ -242,13 +242,13 @@ class Person {
 
 ```javascript
 class Person {
-  #name;
-  constructor(name) {
-    this.#name = name;
-  }
-  #privateMethod() {
-    return 'This is a private method';
-  }
+  #name;
+  constructor(name) {
+    this.#name = name;
+  }
+  #privateMethod() {
+    return 'This is a private method';
+  }
 }
 ```
 
@@ -267,7 +267,7 @@ console.log(person instanceof Person); // true
 
 ```javascript
 class Person {
-  static species = 'Homo sapiens';
+  static species = 'Homo sapiens';
 }
 console.log(Person.species); // Homo sapiens
 ```
@@ -278,9 +278,9 @@ console.log(Person.species); // Homo sapiens
 
 ```javascript
 class Person {
-  static greet() {
-    return 'Hello';
-  }
+  static greet() {
+    return 'Hello';
+  }
 }
 console.log(Person.greet()); // Hello
 ```
@@ -291,9 +291,9 @@ console.log(Person.greet()); // Hello
 
 ```javascript
 try {
-  throw new Error('Something went wrong');
+  throw new Error('Something went wrong');
 } catch (error) {
-  console.error(error.message); // Something went wrong
+  console.error(error.message); // Something went wrong
 }
 ```
 
@@ -303,11 +303,11 @@ try {
 
 ```javascript
 try {
-  // Code that may throw an error
+  // Code that may throw an error
 } catch (error) {
-  console.error(error);
+  console.error(error);
 } finally {
-  console.log('This will always run');
+  console.log('This will always run');
 }
 ```
 
@@ -317,17 +317,17 @@ try {
 
 ```javascript
 class CustomError extends Error {
-  constructor(message) {
-    super(message);
-    this.name = 'CustomError';
-  }
+  constructor(message) {
+    super(message);
+    this.name = 'CustomError';
+  }
 }
 
 try {
-  throw new CustomError('Custom error occurred');
+  throw new CustomError('Custom error occurred');
 } catch (error) {
-  console.error(error.name); // CustomError
-  console.error(error.message); // Custom error occurred
+  console.error(error.name); // CustomError
+  console.error(error.message); // Custom error occurred
 }
 ```
 
@@ -337,24 +337,24 @@ try {
 
 ```javascript
 let iterable = {
-  [Symbol.iterator]() {
-    let step = 0;
-    return {
-      next() {
-        step++;
-        if (step === 1) {
-          return { value: 'Hello', done: false };
-        } else if (step === 2) {
-          return { value: 'World', done: false };
-        }
-        return { value: undefined, done: true };
-      }
-    };
-  }
+  [Symbol.iterator]() {
+    let step = 0;
+    return {
+      next() {
+        step++;
+        if (step === 1) {
+          return { value: 'Hello', done: false };
+        } else if (step === 2) {
+          return { value: 'World', done: false };
+        }
+        return { value: undefined, done: true };
+      }
+    };
+  }
 };
 
 for (let value of iterable) {
-  console.log(value);
+  console.log(value);
 }
 // Output:
 // Hello

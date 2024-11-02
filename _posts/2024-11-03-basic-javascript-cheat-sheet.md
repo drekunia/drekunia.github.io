@@ -160,9 +160,9 @@ console.log(obj.age) // 26
 ```javascript
 let x = 10
 if (x > 5) {
-  console.log("x is greater than 5")
+  console.log("x is greater than 5")
 } else {
-  console.log("x is not greater than 5")
+  console.log("x is not greater than 5")
 }
 ```
 
@@ -171,14 +171,14 @@ if (x > 5) {
 ```javascript
 let fruit = "apple"
 switch (fruit) {
-  case "apple":
-    console.log("This is an apple")
-    break
-  case "banana":
-    console.log("This is a banana")
-    break
-  default:
-    console.log("Unknown fruit")
+  case "apple":
+    console.log("This is an apple")
+    break
+  case "banana":
+    console.log("This is a banana")
+    break
+  default:
+    console.log("Unknown fruit")
 }
 ```
 
@@ -248,16 +248,16 @@ console.log(user?.contact?.phone) // undefined
 ```javascript
 let falsyValues = [false, 0, "", null, undefined, NaN]
 falsyValues.forEach((value) => {
-  if (!value) {
-    console.log(`${value} is falsy`)
-  }
+  if (!value) {
+    console.log(`${value} is falsy`)
+  }
 })
 
 let truthyValues = [true, 1, "non-empty string", {}, []]
 truthyValues.forEach((value) => {
-  if (value) {
-    console.log(`${value} is truthy`)
-  }
+  if (value) {
+    console.log(`${value} is truthy`)
+  }
 })
 ```
 
@@ -267,7 +267,7 @@ truthyValues.forEach((value) => {
 
 ```javascript
 for (let i = 0; i < 5; i++) {
-  console.log(i)
+  console.log(i)
 }
 ```
 
@@ -276,8 +276,8 @@ for (let i = 0; i < 5; i++) {
 ```javascript
 let i = 0
 while (i < 5) {
-  console.log(i)
-  i++
+  console.log(i)
+  i++
 }
 ```
 
@@ -286,8 +286,8 @@ while (i < 5) {
 ```javascript
 let i = 0
 do {
-  console.log(i)
-  i++
+  console.log(i)
+  i++
 } while (i < 5)
 ```
 
@@ -295,13 +295,13 @@ do {
 
 ```javascript
 for (let i = 0; i < 5; i++) {
-  if (i === 2) break
-  console.log(i) // 0, 1
+  if (i === 2) break
+  console.log(i) // 0, 1
 }
 
 for (let i = 0; i < 5; i++) {
-  if (i === 2) continue
-  console.log(i) // 0, 1, 3, 4
+  if (i === 2) continue
+  console.log(i) // 0, 1, 3, 4
 }
 ```
 
@@ -309,10 +309,10 @@ for (let i = 0; i < 5; i++) {
 
 ```javascript
 outerLoop: for (let i = 0; i < 3; i++) {
-  for (let j = 0; j < 3; j++) {
-    if (i === 1) break outerLoop
-    console.log(`i = ${i}, j = ${j}`)
-  }
+  for (let j = 0; j < 3; j++) {
+    if (i === 1) break outerLoop
+    console.log(`i = ${i}, j = ${j}`)
+  }
 }
 ```
 
@@ -321,7 +321,7 @@ outerLoop: for (let i = 0; i < 3; i++) {
 ```javascript
 let obj = { a: 1, b: 2, c: 3 }
 for (let key in obj) {
-  console.log(`${key}: ${obj[key]}`)
+  console.log(`${key}: ${obj[key]}`)
 }
 ```
 
@@ -330,7 +330,7 @@ for (let key in obj) {
 ```javascript
 let arr = [10, 20, 30]
 for (let value of arr) {
-  console.log(value)
+  console.log(value)
 }
 ```
 
@@ -341,7 +341,7 @@ Generally avoided due to potential confusion.
 ```javascript
 let obj = { a: 1, b: 2 }
 with (obj) {
-  console.log(a + b) // 3
+  console.log(a + b) // 3
 }
 ```
 
@@ -351,7 +351,7 @@ with (obj) {
 
 ```javascript
 function greet(name) {
-  return `Hello, ${name}`
+  return `Hello, ${name}`
 }
 console.log(greet("Alice")) // Hello, Alice
 ```
@@ -360,7 +360,7 @@ console.log(greet("Alice")) // Hello, Alice
 
 ```javascript
 function add(a, b) {
-  return a + b
+  return a + b
 }
 console.log(add(2, 3)) // 5
 ```
@@ -369,7 +369,7 @@ console.log(add(2, 3)) // 5
 
 ```javascript
 function greet(name = "Guest") {
-  return `Hello, ${name}`
+  return `Hello, ${name}`
 }
 console.log(greet()) // Hello, Guest
 ```
@@ -378,7 +378,7 @@ console.log(greet()) // Hello, Guest
 
 ```javascript
 function sum(...numbers) {
-  return numbers.reduce((acc, num) => acc + num, 0)
+  return numbers.reduce((acc, num) => acc + num, 0)
 }
 console.log(sum(1, 2, 3, 4)) // 10
 ```
@@ -387,7 +387,7 @@ console.log(sum(1, 2, 3, 4)) // 10
 
 ```javascript
 const sayHello = function (name) {
-  return `Hello, ${name}`
+  return `Hello, ${name}`
 }
 console.log(sayHello("Bob")) // Hello, Bob
 ```
@@ -396,7 +396,7 @@ console.log(sayHello("Bob")) // Hello, Bob
 
 ```javascript
 setTimeout(function () {
-  console.log("This is an anonymous function")
+  console.log("This is an anonymous function")
 }, 1000)
 ```
 
@@ -404,10 +404,10 @@ setTimeout(function () {
 
 ```javascript
 function outer() {
-  function inner() {
-    console.log("Inner function")
-  }
-  inner()
+  function inner() {
+    console.log("Inner function")
+  }
+  inner()
 }
 outer() // Inner function
 ```
@@ -417,9 +417,9 @@ outer() // Inner function
 ```javascript
 let globalVar = "global"
 function scopeExample() {
-  let localVar = "local"
-  console.log(globalVar) // global
-  console.log(localVar) // local
+  let localVar = "local"
+  console.log(globalVar) // global
+  console.log(localVar) // local
 }
 scopeExample()
 console.log(localVar) // ReferenceError: localVar is not defined
@@ -429,10 +429,10 @@ console.log(localVar) // ReferenceError: localVar is not defined
 
 ```javascript
 function factorial(n) {
-  if (n === 0) {
-    return 1
-  }
-  return n * factorial(n - 1)
+  if (n === 0) {
+    return 1
+  }
+  return n * factorial(n - 1)
 }
 console.log(factorial(5)) // 120
 ```
@@ -441,9 +441,9 @@ console.log(factorial(5)) // 120
 
 ```javascript
 function* generatorFunction() {
-  yield 1
-  yield 2
-  yield 3
+  yield 1
+  yield 2
+  yield 3
 }
 const generator = generatorFunction()
 console.log(generator.next().value) // 1
@@ -462,11 +462,11 @@ console.log(add(2, 3)) // 5
 
 ```javascript
 function makeCounter() {
-  let count = 0
-  return function () {
-    count++
-    return count
-  }
+  let count = 0
+  return function () {
+    count++
+    return count
+  }
 }
 const counter = makeCounter()
 console.log(counter()) // 1
@@ -477,9 +477,9 @@ console.log(counter()) // 2
 
 ```javascript
 let obj = {
-  greet() {
-    return "Hello"
-  },
+  greet() {
+    return "Hello"
+  },
 }
 console.log(obj.greet()) // Hello
 ```
@@ -488,10 +488,10 @@ console.log(obj.greet()) // Hello
 
 ```javascript
 let person = {
-  name: "Alice",
-  greet() {
-    return `Hello, ${this.name}`
-  },
+  name: "Alice",
+  greet() {
+    return `Hello, ${this.name}`
+  },
 }
 console.log(person.greet()) // Hello, Alice
 ```
@@ -500,8 +500,8 @@ console.log(person.greet()) // Hello, Alice
 
 ```javascript
 let person = {
-  name: "Alice",
-  greet: () => `Hello, ${this.name}`,
+  name: "Alice",
+  greet: () => `Hello, ${this.name}`,
 }
 console.log(person.greet()) // Hello, undefined
 ```
@@ -510,13 +510,13 @@ console.log(person.greet()) // Hello, undefined
 
 ```javascript
 let obj = {
-  _name: "Alice",
-  get name() {
-    return this._name
-  },
-  set name(value) {
-    this._name = value
-  },
+  _name: "Alice",
+  get name() {
+    return this._name
+  },
+  set name(value) {
+    this._name = value
+  },
 }
 console.log(obj.name) // Alice
 obj.name = "Bob"

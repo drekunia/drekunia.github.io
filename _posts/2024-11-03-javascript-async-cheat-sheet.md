@@ -23,9 +23,9 @@ console.log('End');
 
 ```javascript
 function fetchData(callback) {
-  setTimeout(() => {
-    callback('Data received');
-  }, 1000);
+  setTimeout(() => {
+    callback('Data received');
+  }, 1000);
 }
 fetchData(data => console.log(data)); // "Data received"
 ```
@@ -46,9 +46,9 @@ xhr.send();
 
 ```javascript
 xhr.onreadystatechange = function() {
-  if (xhr.readyState === 4 && xhr.status === 200) {
-    console.log(xhr.responseText);
-  }
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    console.log(xhr.responseText);
+  }
 };
 ```
 
@@ -58,11 +58,11 @@ xhr.onreadystatechange = function() {
 
 ```javascript
 xhr.onload = function() {
-  if (xhr.status === 200) {
-    console.log('Success:', xhr.responseText);
-  } else {
-    console.log('Error:', xhr.status);
-  }
+  if (xhr.status === 200) {
+    console.log('Success:', xhr.responseText);
+  } else {
+    console.log('Error:', xhr.status);
+  }
 };
 ```
 
@@ -72,9 +72,9 @@ xhr.onload = function() {
 
 ```javascript
 xhr.onreadystatechange = function() {
-  if (xhr.readyState === 4) {
-    console.log('Request completed');
-  }
+  if (xhr.readyState === 4) {
+    console.log('Request completed');
+  }
 };
 ```
 
@@ -134,7 +134,7 @@ xhr.send(formData);
 
 ```javascript
 let promise = new Promise((resolve, reject) => {
-  setTimeout(() => resolve('Success'), 1000);
+  setTimeout(() => resolve('Success'), 1000);
 });
 promise.then(result => console.log(result)); // "Success"
 ```
@@ -145,9 +145,9 @@ promise.then(result => console.log(result)); // "Success"
 
 ```javascript
 promise
-  .then(result => console.log(result))
-  .catch(error => console.log(error))
-  .finally(() => console.log('Completed'));
+  .then(result => console.log(result))
+  .catch(error => console.log(error))
+  .finally(() => console.log('Completed'));
 ```
 
 ## Fetch API
@@ -156,9 +156,9 @@ promise
 
 ```javascript
 fetch('https://api.example.com/data')
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.log(error));
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.log(error));
 ```
 
 ## Async Await
@@ -167,13 +167,13 @@ fetch('https://api.example.com/data')
 
 ```javascript
 async function fetchData() {
-  try {
-    let response = await fetch('https://api.example.com/data');
-    let data = await response.json();
-    console.log(data);
-  } catch (error) {
-    console.log(error);
-  }
+  try {
+    let response = await fetch('https://api.example.com/data');
+    let data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.log(error);
+  }
 }
 fetchData();
 ```
@@ -185,7 +185,7 @@ fetchData();
 ```javascript
 let worker = new Worker('worker.js');
 worker.onmessage = function(event) {
-  console.log('Message from worker:', event.data);
+  console.log('Message from worker:', event.data);
 };
 worker.postMessage('Start working');
 ```

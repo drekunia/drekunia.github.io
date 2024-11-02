@@ -23,13 +23,13 @@ npm install typescript --save-dev
 
 ```json
 {
-  "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
-    "strict": true,
-    "esModuleInterop": true
-  },
-  "include": ["src"]
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "include": ["src"]
 }
 ```
 
@@ -42,7 +42,7 @@ npm install typescript --save-dev
 ```typescript
 // src/hello.ts
 function sayHello(name: string): string {
-  return `Hello, ${name}!`;
+  return `Hello, ${name}!`;
 }
 console.log(sayHello('World'));
 ```
@@ -79,7 +79,7 @@ npm install --save-dev @babel/core @babel/preset-env @babel/preset-typescript
 
 ```json
 {
-  "presets": ["@babel/preset-env", "@babel/preset-typescript"]
+  "presets": ["@babel/preset-env", "@babel/preset-typescript"]
 }
 ```
 
@@ -129,8 +129,8 @@ value = 42;
 
 ```typescript
 let person: {name: string; age: number} = {
-  name: "John",
-  age: 25
+  name: "John",
+  age: 25
 };
 ```
 
@@ -140,8 +140,8 @@ let person: {name: string; age: number} = {
 
 ```typescript
 interface Person {
-  name: string;
-  age?: number;
+  name: string;
+  age?: number;
 }
 let person: Person = {name: "Alice"};
 ```
@@ -152,9 +152,9 @@ let person: Person = {name: "Alice"};
 
 ```typescript
 enum Color {
-  Red,
-  Green,
-  Blue
+  Red,
+  Green,
+  Blue
 }
 let c: Color = Color.Green;
 ```
@@ -174,8 +174,8 @@ let n: null = null;
 
 ```typescript
 interface Person {
-  name: string;
-  age: number;
+  name: string;
+  age: number;
 }
 let person: Person = {name: "Alice", age: 25};
 ```
@@ -186,11 +186,11 @@ let person: Person = {name: "Alice", age: 25};
 
 ```typescript
 interface SearchFunc {
-  (source: string, subString: string): boolean;
+  (source: string, subString: string): boolean;
 }
 let mySearch: SearchFunc;
 mySearch = function(src: string, sub: string): boolean {
-  return src.indexOf(sub) > -1;
+  return src.indexOf(sub) > -1;
 };
 ```
 
@@ -200,7 +200,7 @@ mySearch = function(src: string, sub: string): boolean {
 
 ```typescript
 interface StringArray {
-  [index: number]: string;
+  [index: number]: string;
 }
 let myArray: StringArray = ["Alice", "Bob"];
 ```
@@ -211,10 +211,10 @@ let myArray: StringArray = ["Alice", "Bob"];
 
 ```typescript
 interface Shape {
-  color: string;
+  color: string;
 }
 interface Square extends Shape {
-  sideLength: number;
+  sideLength: number;
 }
 let square: Square = {color: "blue", sideLength: 10};
 ```
@@ -225,14 +225,14 @@ let square: Square = {color: "blue", sideLength: 10};
 
 ```typescript
 interface ClockInterface {
-  currentTime: Date;
-  setTime(d: Date): void;
+  currentTime: Date;
+  setTime(d: Date): void;
 }
 class Clock implements ClockInterface {
-  currentTime: Date = new Date();
-  setTime(d: Date) {
-    this.currentTime = d;
-  }
+  currentTime: Date = new Date();
+  setTime(d: Date) {
+    this.currentTime = d;
+  }
 }
 ```
 
@@ -242,10 +242,10 @@ class Clock implements ClockInterface {
 
 ```typescript
 interface Person {
-  name: string;
+  name: string;
 }
 interface Employee {
-  employeeId: number;
+  employeeId: number;
 }
 type Staff = Person & Employee;
 let staff: Staff = {name: "Alice", employeeId: 123};
@@ -266,7 +266,7 @@ let strLength: number = (someValue as string).length;
 
 ```typescript
 function add(x: number, y: number): number {
-  return x + y;
+  return x + y;
 }
 ```
 
@@ -276,11 +276,11 @@ function add(x: number, y: number): number {
 
 ```typescript
 function greet(name: string, age?: number): string {
-  if (age) {
-    return `Hello, ${name}. You are ${age} years old.`;
-  } else {
-    return `Hello, ${name}`;
-  }
+  if (age) {
+    return `Hello, ${name}. You are ${age} years old.`;
+  } else {
+    return `Hello, ${name}`;
+  }
 }
 ```
 
@@ -292,7 +292,7 @@ function greet(name: string, age?: number): string {
 function add(a: number, b: number): number;
 function add(a: string, b: string): string;
 function add(a: any, b: any): any {
-  return a + b;
+  return a + b;
 }
 console.log(add(1, 2)); // 3
 console.log(add("Hello, ", "World!")); // Hello, World!
@@ -304,7 +304,7 @@ console.log(add("Hello, ", "World!")); // Hello, World!
 
 ```typescript
 function applyOperation(x: number, y: number, operation: (a: number, b: number) => number): number {
-  return operation(x, y);
+  return operation(x, y);
 }
 ```
 
@@ -315,9 +315,9 @@ function applyOperation(x: number, y: number, operation: (a: number, b: number) 
 ```typescript
 let num = 10;
 if (num > 5) {
-  console.log("Number is greater than 5");
+  console.log("Number is greater than 5");
 } else {
-  console.log("Number is 5 or less");
+  console.log("Number is 5 or less");
 }
 ```
 
@@ -337,14 +337,14 @@ let result = num > 5 ? "Greater than 5" : "5 or less";
 ```typescript
 let fruit = "apple";
 switch (fruit) {
-  case "apple":
-    console.log("This is an apple");
-    break;
-  case "banana":
-    console.log("This is a banana");
-    break;
-  default:
-    console.log("Unknown fruit");
+  case "apple":
+    console.log("This is an apple");
+    break;
+  case "banana":
+    console.log("This is a banana");
+    break;
+  default:
+    console.log("Unknown fruit");
 }
 ```
 
@@ -354,7 +354,7 @@ switch (fruit) {
 
 ```typescript
 for (let i = 0; i < 5; i++) {
-  console.log(i);
+  console.log(i);
 }
 ```
 
@@ -365,8 +365,8 @@ for (let i = 0; i < 5; i++) {
 ```typescript
 let i = 0;
 while (i < 5) {
-  console.log(i);
-  i++;
+  console.log(i);
+  i++;
 }
 ```
 
@@ -377,8 +377,8 @@ while (i < 5) {
 ```typescript
 let i = 0;
 do {
-  console.log(i);
-  i++;
+  console.log(i);
+  i++;
 } while (i < 5);
 ```
 
@@ -388,12 +388,12 @@ do {
 
 ```typescript
 for (let i = 0; i < 5; i++) {
-  if (i === 2) break; // Exit loop
-  console.log(i); // 0, 1
+  if (i === 2) break; // Exit loop
+  console.log(i); // 0, 1
 }
 for (let i = 0; i < 5; i++) {
-  if (i === 2) continue; // Skip current iteration
-  console.log(i); // 0, 1, 3, 4
+  if (i === 2) continue; // Skip current iteration
+  console.log(i); // 0, 1, 3, 4
 }
 ```
 
@@ -404,11 +404,11 @@ for (let i = 0; i < 5; i++) {
 ```typescript
 // Closure
 function makeCounter() {
-  let count = 0;
-  return function() {
-    count++;
-    return count;
-  };
+  let count = 0;
+  return function() {
+    count++;
+    return count;
+  };
 }
 const counter = makeCounter();
 console.log(counter()); // 1
@@ -416,11 +416,11 @@ console.log(counter()); // 2
 
 // Asynchronous programming with Promises
 function fetchData(url: string): Promise<string> {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(`Data from ${url}`);
-    }, 1000);
-  });
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(`Data from ${url}`);
+    }, 1000);
+  });
 }
 
 fetchData("https://example.com").then(data => console.log(data));

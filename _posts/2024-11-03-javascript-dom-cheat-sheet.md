@@ -23,11 +23,11 @@ console.log(document.title); // Gets the document's title
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>DOM Project</title>
+  <meta charset="UTF-8">
+  <title>DOM Project</title>
 </head>
 <body>
-  <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
 ```
@@ -114,7 +114,7 @@ div.appendChild(textNode);
 
 ```javascript
 div.onclick = function() {
-  alert('Div clicked!');
+  alert('Div clicked!');
 };
 ```
 
@@ -124,7 +124,7 @@ div.onclick = function() {
 
 ```javascript
 div.addEventListener('click', function() {
-  alert('Div clicked!');
+  alert('Div clicked!');
 });
 ```
 
