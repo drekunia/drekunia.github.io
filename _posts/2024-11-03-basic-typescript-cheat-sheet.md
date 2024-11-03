@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Basic Typescript Cheat Sheet"
+author: drekunia
 date: 2024-11-03
 categories: [Typescript]
 tags: [Typescript, Cheat Sheet]

@@ -1,10 +1,25 @@
 ---
-layout: post
 title: "Jekyll and Github Pages as CMS for Your Personal Blog"
-date: 2024-06-19
+author: drekunia
+date: 2024-06-19 11:30:00 +0700
 categories: [Jekyll]
 tags: [Jekyll, CMS, Blogging, Static Site Generators]
 ---
+
+<!--
+description: >-
+  Get started with Chirpy basics in this comprehensive overview.
+  You will learn how to install, configure, and use your first Chirpy-based website, as well as deploy it to a web server.
+pin: true
+math: true
+mermaid: true
+image:
+  path: /commons/devices-mockup.png
+  lqip: data:image/webp;base64,UklGRpoAAABXRUJQVlA4WAoAAAAQAAAADwAABwAAQUxQSDIAAAARL0AmbZurmr57yyIiqE8oiG0bejIYEQTgqiDA9vqnsUSI6H+oAERp2HZ65qP/VIAWAFZQOCBCAAAA8AEAnQEqEAAIAAVAfCWkAALp8sF8rgRgAP7o9FDvMCkMde9PK7euH5M1m6VWoDXf2FkP3BqV0ZYbO6NA/VFIAAAA
+  alt: Responsive rendering of Chirpy theme on multiple devices.
+render_with_liquid: false
+media_subpath: '/posts/20180809'
+-->
 
 ## Introduction
 

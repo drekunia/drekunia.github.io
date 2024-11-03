@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Basic Rust Cheat Sheet"
+author: drekunia
 date: 2024-11-03
 categories: [Rust]
 tags: [Rust, Cheat Sheet]

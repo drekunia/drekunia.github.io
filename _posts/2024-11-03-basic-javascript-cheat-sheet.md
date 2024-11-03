@@ -1,6 +1,6 @@
 ---
-layout: post
 title: "Basic Javascript Cheat Sheet"
+author: drekunia
 date: 2024-11-03
 categories: [Javascript]
 tags: [Javascript, Cheat Sheet]
