@@ -224,3 +224,13 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# Ensure JavaScript files are included in the build
+include:
+  - assets
+  - "*.js"
+
+# Optional: Set up asset pipeline if you're using one
+assets:
+  sources:
+    - assets/js
