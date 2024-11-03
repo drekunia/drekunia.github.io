@@ -139,7 +139,7 @@ assets:
     env: # [development | production]
 
 pwa:
-  enabled: true # The option for PWA feature (installable)
+  enabled: false # The option for PWA feature (installable)
   cache:
     enabled: true # The option for PWA offline cache
     # Paths defined here will be excluded from the PWA cache.
@@ -224,13 +224,3 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
-
-# Ensure JavaScript files are included in the build
-include:
-  - assets
-  - "*.js"
-
-# Optional: Set up asset pipeline if you're using one
-assets:
-  sources:
-    - assets/js
