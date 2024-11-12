@@ -18,13 +18,17 @@
 - type: twitter
   icon: "fa-brands fa-x-twitter"
 
+- type: threads
+  icon: 'fa-brands fa-threads'
+  url: 'https://www.threads.net/@drekunia'                   # Fill with your Threads profile link
+
 - type: facebook
   icon: 'fa-brands fa-facebook'
   url:  'https://www.facebook.com/drekunia/'
 
-- type: discord
-  icon: 'fa-brands fa-discord'
-  url:  'https://discord.gg/tVwD6XkeUt'
+# - type: discord
+#   icon: 'fa-brands fa-discord'
+#   url:  ''
 
 - type: email
   icon: "fas fa-envelope"
@@ -51,7 +55,3 @@
 # - type: reddit
 #   icon: 'fa-brands fa-reddit'
 #   url: ''                   # Fill with your Reddit profile link
-#
-# - type: threads
-#   icon: 'fa-brands fa-threads'
-#   url: ''                   # Fill with your Threads profile link
