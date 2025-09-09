@@ -1,0 +1,25 @@
+# _config.yml - Jekyll Configuration
+title: "drekunia"
+description: "Game Developer | Bridging Code, Design, and Art to Build Engaging Player Experiences"
+baseurl: ""
+url: "https://yourdomain.com"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Theme settings
+author:
+  name: "drekunia"
+  bio: "I’m a developer exploring how art, design, and code come together to make meaningful games. With a background in programming and a passion for game design and art direction, I focus on creating distinctive gameplay experiences and prototypes that bring ideas to life. Always open to connecting with other creators who want to push games as a medium."
+  avatar: "/assets/images/avatar.png"
+
+# Social links
+social:
+  instagram: "drekunia"
+  twitter: "drekunia"
+  email: "drekunia@gmail.com"
