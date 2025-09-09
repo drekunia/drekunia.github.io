@@ -24,49 +24,25 @@
   </head>
   <body>
     <div class="container">
-      <header class="site-header">
-        {% if site.author.avatar %}
-        <div class="avatar">
-          <img
-            src="{{ site.author.avatar | relative_url }}"
-            alt="{{ site.author.nickname }}"
-            class="avatar-img"
-          />
-        </div>
-        {% endif %}
-      </header>
-
       <main class="site-content">
         <div class="intro">
+          <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.fullname }}" class="avatar">
           <h1 class="site-title">{{ site.author.nickname | downcase }}</h1>
+          <div class="realname">{{ site.author.fullname }}</div>
 
           <div class="bio">
             <p>{{ site.author.bio }}</p>
           </div>
+
+          <div class="links">
+            {% for link in site.links %}
+            <div>
+              <a href="{{ link.url }}" class="link">{{ link.name }}</a>
+            </div>
+            {% endfor %}
+          </div>
         </div>
       </main>
-
-      <footer class="site-footer">
-        <div class="social-links">
-          {% if site.social.email %}
-          <a href="mailto:{{ site.social.email }}" class="social-link">email</a>
-          {% endif %} {% if site.social.instagram %}
-          <a
-            href="https://instagram.com/{{ site.social.instagram }}"
-            class="social-link"
-            >instagram</a
-          >
-          {% endif %} {% if site.social.twitter %}
-          <a
-            href="https://x.com/{{ site.social.twitter }}"
-            class="social-link"
-            >twitter</a
-          >
-          {% endif %}
-        </div>
-      </footer>
     </div>
-
-    <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
   </body>
 </html>

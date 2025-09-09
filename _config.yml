@@ -2,25 +2,33 @@
 title: "drekunia"
 description: "Game Developer | Bridging Code, Design, and Art to Build Engaging Player Experiences"
 baseurl: ""
-url: "https://yourdomain.com"
+url: "https://drekunia.github.io"
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
 permalink: /:title/
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
 
 # Theme settings
 author:
   nickname: "drekunia"
   fullname: "Andre Kurniawan"
-  bio: "I’m a developer exploring how art, design, and code come together to make meaningful games. With a background in programming and a passion for game design and art direction, I focus on creating distinctive gameplay experiences and prototypes that bring ideas to life. Always open to connecting with other creators who want to push games as a medium."
+  bio: "I'm a developer exploring how art, design, and code come together to make meaningful games. With a background in programming and a passion for game design and art direction, I focus on creating distinctive gameplay experiences and prototypes that bring ideas to life. Always open to connecting with other creators who want to push games as a medium."
   avatar: "/assets/images/avatar.png"
 
 # Social links
-social:
-  instagram: "drekunia"
-  twitter: "drekunia"
-  email: "drekunia@gmail.com"
+links:
+  - name: contact/inquiries
+    url: mailto:drekunia@gmail.com
+  - name: instagram
+    url: https://instagram.com/drekunia
+  - name: x/twitter
+    url: https://x.com/drekunia
+  - name: youtube
+    url: https://www.youtube.com/@drekunia
+  - name: github
+    url: https://github.com/drekunia
+  - name: itch.io
+    url: https://drekunia.itch.io/
+  - name: artstation
+    url: https://www.artstation.com/drekunia
