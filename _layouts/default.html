@@ -37,12 +37,15 @@
           <div class="links">
             {% for link in site.links %}
             <div>
-              <a href="{{ link.url }}" class="link">{{ link.name }}</a>
+              <a href="{{ link.url }}" class="link" target="_blank" rel="noopener noreferrer">{{ link.name }}</a>
             </div>
             {% endfor %}
           </div>
         </div>
       </main>
+      <footer class="footer">
+        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.nickname }}. All rights reserved.</p>
+      </footer>
     </div>
   </body>
 </html>
