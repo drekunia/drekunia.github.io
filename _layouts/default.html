@@ -29,7 +29,7 @@
         <div class="avatar">
           <img
             src="{{ site.author.avatar | relative_url }}"
-            alt="{{ site.author.name }}"
+            alt="{{ site.author.nickname }}"
             class="avatar-img"
           />
         </div>
@@ -38,7 +38,7 @@
 
       <main class="site-content">
         <div class="intro">
-          <h1 class="site-title">{{ site.author.name | downcase }}</h1>
+          <h1 class="site-title">{{ site.author.nickname | downcase }}</h1>
 
           <div class="bio">
             <p>{{ site.author.bio }}</p>
