@@ -13,23 +13,26 @@ author:
   title: "Andre Kurniawan"
   bio: "I'm a game developer exploring how art, design, and code come together to make meaningful games. With background in programming and passion for game design and art direction, I focus on creating distinctive gameplay experiences that bring ideas to life. Always open to connect with other creators who want to push video games as a medium."
   avatar: "/assets/img/avatar.webp"
+  link: "htttps://github.com/drekunia"
 
 # Social links
 links:
+  - name: showreel
+    url: https://www.youtube.com/@drekunia
+    bold: true
   - name: contact/inquiries
     url: mailto:drekunia@gmail.com
+    same_tab: true
   - name: instagram
     url: https://instagram.com/drekunia
   - name: x/twitter
     url: https://x.com/drekunia
-  - name: youtube
-    url: https://www.youtube.com/@drekunia
+  - name: linkedin
+    url: https://www.linkedin.com/in/drekunia
   - name: itch.io
     url: https://drekunia.itch.io/
   - name: artstation
     url: https://www.artstation.com/drekunia
-  - name: github
-    url: https://github.com/drekunia
   - name: blog
     url: /blog/
     same_tab: true

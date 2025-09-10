@@ -46,8 +46,10 @@
       <main class="site-content">{{ content }}</main>
       <footer class="footer">
         <p>
-          &copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. All rights
-          reserved.
+          &copy; {{ 'now' | date: "%Y" }}
+          <a class="link" href="{{site.author.link}}"
+            ><strong>{{ site.author.name }}</strong></a
+          >. All rights reserved.
         </p>
       </footer>
     </div>

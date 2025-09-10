@@ -25,7 +25,7 @@ layout: default
         target="_blank"
         rel="noopener noreferrer"
         {% endunless %}
-        >{{ link.name }}</a
+        >{% if link.bold %}<strong>{{ link.name }}</strong>{% else %}{{link.name}}{% endif %}</a
       >
     </div>
     {% endfor %}
