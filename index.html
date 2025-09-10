@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="intro">
+  <img
+    src="{{ site.author.avatar | relative_url }}"
+    alt="{{ site.author.fullname }}"
+    class="avatar"
+  />
+  <h1 class="site-title">{{ site.author.nickname | downcase }}</h1>
+  <div class="realname">{{ site.author.fullname }}</div>
+
+  <div class="bio">
+    <p>{{ site.author.bio }}</p>
+  </div>
+
+  <div class="links">
+    {% for link in site.links %}
+    <div>
+      <a
+        href="{{ link.url }}"
+        class="link"
+        target="_blank"
+        rel="noopener noreferrer"
+        >{{ link.name }}</a
+      >
+    </div>
+    {% endfor %}
+  </div>
+</div>

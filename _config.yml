@@ -30,3 +30,8 @@ links:
     url: https://www.artstation.com/drekunia
   - name: github
     url: https://github.com/drekunia
+
+# Blog settings
+permalink: /blog/:year/:month/:day/:title/
+paginate: 5
+paginate_path: "/blog/page:num/"
