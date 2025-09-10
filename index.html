@@ -21,8 +21,10 @@ layout: default
       <a
         href="{{ link.url }}"
         class="link"
+        {% unless link.same_tab %}
         target="_blank"
         rel="noopener noreferrer"
+        {% endunless %}
         >{{ link.name }}</a
       >
     </div>

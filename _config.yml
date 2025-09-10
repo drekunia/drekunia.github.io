@@ -1,6 +1,6 @@
 # Site settings
 title: "drekunia"
-description: "Andre Kurniawan | Game Developer"
+description: "drekunia | Andre Kurniawan | Game Developer"
 url: "https://drekunia.github.io"
 
 # Build settings
@@ -32,8 +32,4 @@ links:
     url: https://github.com/drekunia
   - name: blog
     url: /blog/
-
-# Blog settings
-permalink: /blog/:year/:month/:day/:title/
-paginate: 5
-paginate_path: "/blog/page:num/"
+    same_tab: true
