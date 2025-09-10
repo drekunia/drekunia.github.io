@@ -30,6 +30,8 @@ links:
     url: https://www.artstation.com/drekunia
   - name: github
     url: https://github.com/drekunia
+  - name: blog
+    url: /blog/
 
 # Blog settings
 permalink: /blog/:year/:month/:day/:title/
