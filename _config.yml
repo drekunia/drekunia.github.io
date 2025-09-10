@@ -1,15 +1,13 @@
-# Jekyll Configuration
+# Site settings
 title: "drekunia"
 description: "Andre Kurniawan | Game Developer"
-baseurl: ""
 url: "https://drekunia.github.io"
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /:title/
 
-# Theme settings
+# Author info
 author:
   nickname: "drekunia"
   fullname: "Andre Kurniawan"
