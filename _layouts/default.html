@@ -4,10 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon/favicon-32x32.png' | relative_url }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon/favicon-16x16.png' | relative_url }}">
-    <link rel="shortcut icon" href="{{ '/assets/favicon/favicon.ico' | relative_url }}">
+    <!-- Favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ '/assets/img/favicons/favicon-32x32.png' | relative_url }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{ '/assets/img/favicons/favicon-16x16.png' | relative_url }}"
+    />
+    <link
+      rel="shortcut icon"
+      href="{{ '/assets/img/favicons/favicon.ico' | relative_url }}"
+    />
 
     <title>
       {% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{
@@ -30,11 +43,12 @@
   </head>
   <body>
     <div class="container">
-      <main class="site-content">
-        {{ content }}
-      </main>
+      <main class="site-content">{{ content }}</main>
       <footer class="footer">
-        <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. All rights reserved.</p>
+        <p>
+          &copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. All rights
+          reserved.
+        </p>
       </footer>
     </div>
   </body>
