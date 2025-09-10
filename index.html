@@ -5,11 +5,11 @@ layout: default
 <div class="intro">
   <img
     src="{{ site.author.avatar | relative_url }}"
-    alt="{{ site.author.fullname }}"
+    alt="{{ site.author.name }}"
     class="avatar"
   />
-  <h1 class="site-title">{{ site.author.nickname | downcase }}</h1>
-  <div class="realname">{{ site.author.fullname }}</div>
+  <h1 class="site-title">{{ site.author.name | downcase }}</h1>
+  <div class="author-title">{{ site.author.title }}</div>
 
   <div class="bio">
     <p>{{ site.author.bio }}</p>
