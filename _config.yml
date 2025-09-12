@@ -33,5 +33,5 @@ links:
   - name: artstation
     url: https://www.artstation.com/drekunia
   - name: blog
-    url: /blog/
+    url: https://drekunia.github.io/blog
     same_tab: true
