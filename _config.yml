@@ -1,6 +1,6 @@
 # Site settings
 title: "drekunia"
-description: "I’m a game developer and 3D artist with programming experience and a love for design and creative media. I enjoy combining code and arts to create games, and I’m always open to connecting with others who share the same passion."
+description: "I’m a game developer and 3D artist with programming experience and a passion for design and creative media. I enjoy combining code and arts to create games, and I’m always open to connecting with others who share the same passion."
 url: "https://drekunia.github.io"
 twitter_username: drekunia
 image: /assets/img/og-image.png
@@ -13,7 +13,7 @@ highlighter: rouge
 author:
   name: "drekunia"
   title: "Andre Kurniawan"
-  bio: "I’m a game developer and 3D artist with programming experience and a love for design and creative media. I enjoy combining code and arts to create games, and I’m always open to connecting with others who share the same passion."
+  bio: "I’m a game developer and 3D artist with programming experience and a passion for design and creative media. I enjoy combining code and arts to create games, and I’m always open to connecting with others who share the same passion."
   avatar: "/assets/img/avatar.webp"
 
 # Social links
