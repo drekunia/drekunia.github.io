@@ -1,6 +1,8 @@
 # Site settings
 title: "drekunia"
-description: "Game developer and 3D artist creating games at the intersection of code and arts. Open to collaboration and connection."
+description: >-
+  Game developer and 3D artist creating games at the intersection of code and arts.
+  Let's connect and create.
 url: "https://drekunia.github.io"
 twitter_username: drekunia
 image: /assets/img/og-image.png
@@ -13,7 +15,13 @@ highlighter: rouge
 author:
   name: "drekunia"
   title: "Andre Kurniawan"
-  bio: "I’m a game developer and 3D artist with programming experience and a passion for design and creative media. I enjoy combining code and arts to create games, and I’m always open to connecting with others who share the same passion."
+  bio: >-
+    I'm a [game developer](https://drekunia.itch.io/){: target="_blank" rel="noopener noreferrer"}
+    and [3D artist](https://www.artstation.com/drekunia){: target="_blank" rel="noopener noreferrer"}
+    with [programming](https://github.com/drekunia){: target="_blank" rel="noopener noreferrer"} experience
+    and a passion for design and creative media.
+    I enjoy combining code and arts to create games,
+    and I'm always open to connect with others who share the same passion.
   avatar: "/assets/img/avatar.webp"
 
 # Social links
@@ -28,12 +36,12 @@ links:
     url: https://instagram.com/drekunia
   - name: x/twitter
     url: https://x.com/drekunia
-  # - name: linkedin
-  #   url: https://www.linkedin.com/in/drekunia
-  - name: itch.io
-    url: https://drekunia.itch.io/
-  - name: artstation
-    url: https://www.artstation.com/drekunia
+  - name: linkedin
+    url: https://www.linkedin.com/in/drekunia
+  # - name: itch.io
+  #   url: https://drekunia.itch.io/
+  # - name: artstation
+  #   url: https://www.artstation.com/drekunia
   - name: blog
     url: https://drekunia.github.io/blog
     same_tab: true

@@ -3,12 +3,14 @@
   --bg-color: #0a0a0a;
   --text-color: #e5e5e5;
   --text-muted: #a0a0a0;
+  --text-highlight: #eb5757;
   --accent-color: #ffffff;
   --border-color: #333333;
   --hover-color: #1a1a1a;
 
-  --font-family: "JetBrains Mono", monospace, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  --font-family:
+    "JetBrains Mono", monospace, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
   --font-size-base: 14px;
   --font-size-large: 20px;
   --font-size-small: 12px;
@@ -69,7 +71,8 @@ body {
   line-height: 1;
 }
 
-.author-title, .muted-title {
+.author-title,
+.muted-title {
   font-size: calc(var(--font-size-base) * 1.2);
   color: var(--text-muted);
   opacity: 0.6;
@@ -84,6 +87,31 @@ body {
   margin-top: var(--spacing-md);
   font-size: var(--font-size-base);
   line-height: 1.7;
+}
+
+.bio p a {
+  position: relative;
+  color: var(--text-highlight);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.bio p a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--text-highlight);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.bio p a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 /* Links */

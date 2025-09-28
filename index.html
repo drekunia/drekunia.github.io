@@ -12,7 +12,7 @@ layout: default
   <div class="author-title">{{ site.author.title }}</div>
 
   <div class="bio">
-    <p>{{ site.author.bio }}</p>
+    {{ site.author.bio | markdownify }}
   </div>
 
   <div class="links">
