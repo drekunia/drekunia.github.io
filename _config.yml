@@ -38,10 +38,10 @@ links:
     url: https://x.com/drekunia
   - name: linkedin
     url: https://www.linkedin.com/in/drekunia
-  # - name: itch.io
-  #   url: https://drekunia.itch.io/
-  # - name: artstation
-  #   url: https://www.artstation.com/drekunia
+  - name: itch.io
+    url: https://drekunia.itch.io/
+  - name: artstation
+    url: https://www.artstation.com/drekunia
   - name: blog
     url: https://drekunia.github.io/blog
     same_tab: true
