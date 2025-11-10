@@ -2,32 +2,31 @@
 layout: default
 ---
 
-<div style="margin: 0 auto;">
-  <img
-    src="{{ site.author.avatar | relative_url }}"
-    alt="{{ site.author.name }}"
-    class="avatar"
-  />
-  <h1 class="site-title">{{ site.author.name | downcase }}</h1>
-  <div class="author-title">{{ site.author.title }}</div>
+<div style="margin: 0 auto">
+    <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="avatar" />
+    <h1 class="site-title">{{ site.author.name | downcase }}</h1>
+    <div class="author-title">{{ site.author.title }}</div>
 
-  <div class="bio">
-    {{ site.author.bio | markdownify }}
-  </div>
+    <div class="bio">{{ site.author.bio | markdownify }}</div>
 
-  <div class="links">
-    {% for link in site.links %}
-    <div>
-      <a
-        href="{{ link.url }}"
-        class="link"
-        {% unless link.same_tab %}
-        target="_blank"
-        rel="noopener noreferrer"
-        {% endunless %}
-        >{% if link.bold %}<strong>{{ link.name }}</strong>{% else %}{{link.name}}{% endif %}</a
-      >
+    <div class="links">
+        {% for link in site.links %}
+        <div>
+            <a
+                href="{{ link.url }}"
+                class="link"
+                {%
+                unless
+                link.same_tab
+                %}
+                target="_blank"
+                rel="me noopener noreferrer"
+                {%
+                endunless
+                %}
+                >{% if link.bold %}<strong>{{ link.name }}</strong>{% else %}{{link.name}}{% endif %}</a
+            >
+        </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-  </div>
 </div>
