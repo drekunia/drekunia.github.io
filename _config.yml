@@ -36,12 +36,12 @@ links:
       url: https://instagram.com/drekunia
     - name: x/twitter
       url: https://x.com/drekunia
-    - name: mastodon
-      url: https://mastodon.gamedev.place/@drekunia
-    - name: linkedin
-      url: https://www.linkedin.com/in/drekunia
-    - name: github
-      url: https://github.com/drekunia
+    # - name: mastodon
+    #   url: https://mastodon.gamedev.place/@drekunia
+    # - name: linkedin
+    #   url: https://www.linkedin.com/in/drekunia
+    # - name: github
+    #   url: https://github.com/drekunia
     - name: itch.io
       url: https://drekunia.itch.io/
     - name: artstation
