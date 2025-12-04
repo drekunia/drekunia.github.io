@@ -1,8 +1,8 @@
 # Site settings
 title: "drekunia"
 description: >-
-    Game developer and artist creating games at the intersection of code and arts.
-    Let's connect and create.
+  Game developer and artist creating games at the intersection of code and arts.
+  Let's connect and create.
 url: "https://drekunia.github.io"
 twitter_username: drekunia
 image: /assets/img/og-image.png
@@ -13,40 +13,42 @@ highlighter: rouge
 
 # Author info
 author:
-    name: "drekunia"
-    title: "Andre Kurniawan"
-    bio: >-
-        I’m a [game developer](https://drekunia.itch.io/){: target="_blank" rel="noopener noreferrer"}, 
-        [artist](https://www.artstation.com/drekunia){: target="_blank" rel="noopener noreferrer"}, and 
-        [programmer](https://github.com/drekunia){: target="_blank" rel="noopener noreferrer"} 
-        who enjoys mixing art and code to make games and other creative projects. 
-        I like exploring things like real time graphics, generative art, and music, 
-        finding new ways to bring ideas to life. 
-        Always open to connect with others who share the same passion.
-    avatar: "/assets/img/avatar.webp"
+  name: "drekunia"
+  title: "Andre Kurniawan"
+  bio: >-
+    I’m a [game developer](https://drekunia.itch.io/){: target="_blank" rel="noopener noreferrer"}, 
+    [artist](https://www.artstation.com/drekunia){: target="_blank" rel="noopener noreferrer"}, and 
+    [programmer](https://github.com/drekunia){: target="_blank" rel="noopener noreferrer"} 
+    who enjoys mixing art and code to make games and other creative projects. 
+    I like exploring things like real time graphics, generative art, and music, 
+    finding new ways to bring ideas to life. 
+    Always open to connect with others who share the same passion.
+  avatar: "/assets/img/avatar.webp"
 
 # Social links
 links:
-    - name: showreel
-      url: https://www.youtube.com/@drekunia
-      bold: true
-    - name: contact/inquiries
-      url: mailto:drekunia@gmail.com
-      same_tab: true
-    - name: instagram
-      url: https://instagram.com/drekunia
-    - name: x/twitter
-      url: https://x.com/drekunia
-    # - name: mastodon
-    #   url: https://mastodon.gamedev.place/@drekunia
-    # - name: linkedin
-    #   url: https://www.linkedin.com/in/drekunia
-    # - name: github
-    #   url: https://github.com/drekunia
-    - name: itch.io
-      url: https://drekunia.itch.io/
-    - name: artstation
-      url: https://www.artstation.com/drekunia
-    - name: blog
-      url: https://drekunia.github.io/blog
-      same_tab: true
+  - name: showreel
+    url: https://www.youtube.com/@drekunia
+    bold: true
+  - name: contact/inquiries
+    url: mailto:drekunia@gmail.com
+    same_tab: true
+  # - name: instagram
+  #   url: https://instagram.com/drekunia
+  # - name: x/twitter
+  #   url: https://x.com/drekunia
+  - name: bluesky
+    url: https://bsky.app/profile/drekunia.bsky.social
+  - name: mastodon
+    url: https://mastodon.gamedev.place/@drekunia
+  # - name: linkedin
+  #   url: https://www.linkedin.com/in/drekunia
+  # - name: github
+  #   url: https://github.com/drekunia
+  # - name: itch.io
+  #   url: https://drekunia.itch.io/
+  # - name: artstation
+  #   url: https://www.artstation.com/drekunia
+  - name: blog
+    url: https://drekunia.github.io/blog
+    same_tab: true
