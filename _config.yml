@@ -39,8 +39,9 @@ links:
   #   url: https://x.com/drekunia
   - name: bluesky
     url: https://bsky.app/profile/drekunia.bsky.social
-  # - name: mastodon
-  #   url: https://mastodon.gamedev.place/@drekunia
+  - name: mastodon
+    url: https://mastodon.gamedev.place/@drekunia
+    hidden: true
   # - name: linkedin
   #   url: https://www.linkedin.com/in/drekunia
   # - name: github
