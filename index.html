@@ -24,6 +24,14 @@ layout: default
                 {%
                 endunless
                 %}
+                {%
+                if
+                hidden
+                %}
+                hidden
+                {%
+                endif
+                %}
                 >{% if link.bold %}<strong>{{ link.name }}</strong>{% else %}{{link.name}}{% endif %}</a
             >
         </div>
