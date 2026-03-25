@@ -35,10 +35,10 @@ links:
     same_tab: true
   - name: instagram
     url: https://instagram.com/drekunia
-  # - name: x/twitter
-  #   url: https://x.com/drekunia
-  - name: bluesky
-    url: https://bsky.app/profile/drekunia.bsky.social
+  - name: x/twitter
+    url: https://x.com/drekunia
+  # - name: bluesky
+  #   url: https://bsky.app/profile/drekunia.bsky.social
   # - name: linkedin
   #   url: https://www.linkedin.com/in/drekunia
   # - name: github
