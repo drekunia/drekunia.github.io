@@ -1,3 +1,7 @@
+when:
+  event: [push, manual]
+  branch: main
+
 steps:
   build_and_deploy:
     image: ruby:latest
