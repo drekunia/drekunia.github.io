@@ -2,15 +2,16 @@ steps:
   build:
     image: jekyll/jekyll:latest
     commands:
+      - chmod -R a+w .
       - bundle install
       - bundle exec jekyll build
-    settings:
-      verbose: true
 
   deploy:
-    image: codeberg.org/git-pages/plugin-deploy:1
+    image: codeberg.org/sugar700/plugin-codeberg-pages-deploy:1
     settings:
       folder: _site
+      ssh_key:
+        from_secret: pages_deploy_key
     when:
       branch: main
       event: push
