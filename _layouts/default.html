@@ -2,13 +2,18 @@
 <html lang="en">
     <head>
         <!-- Global Redirect to Codeberg -->
-        {% if site.github %}
+        {% if site.github %} {% if page.url == "/404.html" %}
+        <script type="text/javascript">
+            var newLocation = site.new_url + window.location.pathname;
+            window.location.href = newLocation;
+        </script>
+        {% else %}
         <meta http-equiv="refresh" content="0; url={{ site.new_url }}{{ page.url }}" />
         <link rel="canonical" href="{{ site.new_url }}{{ page.url }}" />
         <script type="text/javascript">
             window.location.href = "{{ site.new_url }}{{ page.url }}";
         </script>
-        {% endif %}
+        {% endif %} {% endif %}
 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
