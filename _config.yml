@@ -15,40 +15,14 @@ highlighter: rouge
 author:
     name: "drekunia"
     title: "Andre Kurniawan"
-    bio: >-
-        I’m a [game developer](https://drekunia.itch.io/){: target="_blank" rel="noopener noreferrer"},
-        [artist](https://www.artstation.com/drekunia){: target="_blank" rel="noopener noreferrer"}, and
-        [programmer](https://github.com/drekunia){: target="_blank" rel="noopener noreferrer"}
-        who enjoys mixing art and code to make games and other creative projects.
-        I like exploring things like real time graphics, generative art, and music,
-        finding new ways to bring ideas to life.
-        Always open to connect with others who share the same passion.
+    bio:
     avatar: "/assets/img/avatar.webp"
 
 # Social links
 links:
-    - name: showreel
-      url: https://youtu.be/M3W9M_MM-eU
-      bold: true
     - name: contact/inquiries
       url: mailto:drekunia@gmail.com
-      same_tab: true
-    - name: instagram
-      url: https://instagram.com/drekunia
-    - name: x/twitter
-      url: https://x.com/drekunia
-    # - name: bluesky
-    #   url: https://bsky.app/profile/drekunia.bsky.social
-    # - name: linkedin
-    #   url: https://www.linkedin.com/in/drekunia
-    # - name: github
-    #   url: https://github.com/drekunia
-    # - name: itch.io
-    #   url: https://drekunia.itch.io/
-    # - name: artstation
-    #   url: https://www.artstation.com/drekunia
-    - name: blog
-      url: https://drekunia.github.io/blog
+      bold: true
       same_tab: true
     # put hidden links on the bottom
     - name: mastodon
