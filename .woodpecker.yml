@@ -1,10 +1,12 @@
-pipeline:
+steps:
   build:
     image: jekyll/jekyll:latest
     commands:
       - bundle install
       - bundle exec jekyll build
-    
+    settings:
+      verbose: true
+
   deploy:
     image: codeberg.org/git-pages/plugin-deploy:1
     settings:
