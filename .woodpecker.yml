@@ -6,6 +6,8 @@ steps:
         from_secret: cb_token
     commands:
       - chmod -R a+w .
+      - gem update --system
+      - gem install bundler
       - bundle install
       - bundle exec jekyll build
       - cd _site
