@@ -2,21 +2,16 @@ steps:
   build_and_deploy:
     image: jekyll/jekyll:latest
     environment:
-      # You must add this secret in Woodpecker settings!
-      - CB_TOKEN:
-          from_secret: cb_token
+      CB_TOKEN:
+        from_secret: cb_token
     commands:
-      # 1. Build the site
       - chmod -R a+w .
       - bundle install
       - bundle exec jekyll build
-      
-      # 2. Manual Git Push to the 'pages' branch
       - cd _site
       - git init
-      - git config user.name "Woodpecker CI"
+      - git config user.name "Woodpecker"
       - git config user.email "username@noreply.codeberg.org"
       - git add .
-      - git commit -m "Automated deploy from Woodpecker"
-      # This line pushes to the 'pages' branch of your repo
-      - git push -f https://drekunia:$CB_TOKEN@codeberg.org/drekunia/pages.git master:pages
+      - git commit -m "Deploy from CI"
+      - git push -f https://drekunia:$${CB_TOKEN}@codeberg.org/drekunia/pages.git master:pages
