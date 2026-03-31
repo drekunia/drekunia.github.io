@@ -1,0 +1,14 @@
+pipeline:
+  build:
+    image: jekyll/jekyll:latest
+    commands:
+      - bundle install
+      - bundle exec jekyll build
+    
+  deploy:
+    image: codeberg.org/git-pages/plugin-deploy:1
+    settings:
+      folder: _site
+    when:
+      branch: main
+      event: push
