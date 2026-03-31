@@ -4,8 +4,9 @@
         <!-- Global Redirect to Codeberg -->
         {% if site.github %} {% if page.url == "/404.html" %}
         <script type="text/javascript">
-            var newLocation = site.new_url + window.location.pathname;
-            window.location.href = newLocation;
+            var base = "{{ site.new_url }}".replace(/\/$/, ""); // Remove trailing slash if exists
+            var path = window.location.pathname;
+            window.location.replace(base + path);
         </script>
         {% else %}
         <meta http-equiv="refresh" content="0; url={{ site.new_url }}{{ page.url }}" />
