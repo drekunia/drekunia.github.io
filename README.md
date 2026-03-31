@@ -1,1 +1,1 @@
-# drekunia.github.io
+# drekunia.codeberg.page
