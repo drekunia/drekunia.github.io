@@ -1,4 +1,4 @@
 # drekunia.codeberg.page
 
 TODO:
-- write readme (maybe)
+- write readme (maybe tomorrow)
