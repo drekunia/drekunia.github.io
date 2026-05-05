@@ -47,6 +47,8 @@ links:
     url: https://drekunia.itch.io/
   # - name: artstation
   #   url: https://www.artstation.com/drekunia
+  - name: bandcamp
+    url: https://drekunia.bandcamp.com
   - name: blog
     url: https://drekunia.codeberg.page/blog
     same_tab: true
