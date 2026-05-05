@@ -16,9 +16,7 @@ author:
   name: "drekunia"
   title: "Andre Kurniawan"
   bio: >-
-    I’m a [game developer](https://drekunia.itch.io/){: target="_blank" rel="noopener noreferrer"}, 
-    [artist](https://www.artstation.com/drekunia){: target="_blank" rel="noopener noreferrer"}, and 
-    [programmer](https://codeberg.org/drekunia){: target="_blank" rel="noopener noreferrer"} 
+    I’m a [game developer](https://drekunia.itch.io/){: target="_blank" rel="noopener noreferrer"} 
     who enjoys mixing art and code to make games and other creative projects. 
     I like exploring things like real time graphics, generative art, and music, 
     finding new ways to bring ideas to life. 
@@ -27,9 +25,6 @@ author:
 
 # Social links
 links:
-  - name: showreel
-    url: https://youtu.be/M3W9M_MM-eU
-    bold: true
   - name: contact/inquiries
     url: mailto:drekunia@gmail.com
     same_tab: true
@@ -39,14 +34,17 @@ links:
     url: https://x.com/drekunia
   # - name: bluesky
   #   url: https://bsky.app/profile/drekunia.bsky.social
+  - name: youtube
+    url: https://www.youtube.com/@drekunia
+  #   bold: true
   # - name: linkedin
   #   url: https://www.linkedin.com/in/drekunia
-  # - name: github
-  #   url: https://github.com/drekunia
-  # - name: codeberg
-  #   url: https://codeberg.org/drekunia
-  # - name: itch.io
-  #   url: https://drekunia.itch.io/
+  - name: github
+    url: https://github.com/drekunia
+  - name: codeberg
+    url: https://codeberg.org/drekunia
+  - name: itch.io
+    url: https://drekunia.itch.io/
   # - name: artstation
   #   url: https://www.artstation.com/drekunia
   - name: blog
