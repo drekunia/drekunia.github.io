@@ -1,8 +1,7 @@
 # Site settings
 title: "drekunia"
 description: >-
-  Game developer and artist creating games at the intersection of code and arts.
-  Let's connect and create.
+  Creating games at the intersection of code and arts. Let's connect.
 url: "https://drekunia.codeberg.page"
 twitter_username: drekunia
 image: /assets/img/og-image.png
