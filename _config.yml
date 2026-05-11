@@ -29,8 +29,8 @@ links:
     same_tab: true
   - name: instagram
     url: https://instagram.com/drekunia
-  - name: x/twitter
-    url: https://x.com/drekunia
+  # - name: x/twitter
+  #   url: https://x.com/drekunia
   # - name: bluesky
   #   url: https://bsky.app/profile/drekunia.bsky.social
   - name: youtube
@@ -38,8 +38,8 @@ links:
   #   bold: true
   # - name: linkedin
   #   url: https://www.linkedin.com/in/drekunia
-  - name: github
-    url: https://github.com/drekunia
+  # - name: github
+  #   url: https://github.com/drekunia
   - name: codeberg
     url: https://codeberg.org/drekunia
   - name: itch.io
