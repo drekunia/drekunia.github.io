@@ -1,4 +1,4 @@
-# drekunia.codeberg.page
+# drekunia.github.io
 
 TODO:
 - write readme (maybe tomorrow, maybe)
