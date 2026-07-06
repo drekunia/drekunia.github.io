@@ -2,7 +2,7 @@
 title: "drekunia"
 description: >-
   Creating games at the intersection of code and arts. Let's connect.
-url: "https://drekunia.codeberg.page"
+url: "https://drekunia.github.io"
 twitter_username: drekunia
 image: /assets/img/og-image.png
 
@@ -49,7 +49,7 @@ links:
   - name: bandcamp
     url: https://drekunia.bandcamp.com
   - name: blog
-    url: https://drekunia.codeberg.page/blog
+    url: https://drekunia.github.io/blog
     same_tab: true
   # put hidden links on the bottom
   - name: mastodon
