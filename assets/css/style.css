@@ -113,12 +113,12 @@ body {
 }
 
 .bio p a:hover {
-  color: var(--bg-color);
+  color: var(--text-highlight);
 }
 
 .bio p a:hover::after {
   transform: scaleY(1);
-  opacity: 1;
+  opacity: 0.15;
 }
 
 /* Links */

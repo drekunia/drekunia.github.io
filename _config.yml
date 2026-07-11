@@ -15,9 +15,14 @@ author:
   name: "drekunia"
   title: "Andre Kurniawan"
   bio: >-
-    A multidisciplinary developer leveraging code as an artistic medium to build engaging games and other creative projects. 
-    My work focuses on the intersection of technology and design, with a core interest in game development, art, and music. 
-    Open to exploring new opportunities where I can learn and contribute.
+    I build creative projects by leveraging 
+    [code](https://github.com/drekunia){: target="_blank" rel="noopener noreferrer"} 
+    as an art form. 
+    Most of my work revolves around technology and design, specifically 
+    [game development](https://drekunia.itch.io){: target="_blank" rel="noopener noreferrer"}, 
+    [digital art](https://www.artstation.com/drekunia){: target="_blank" rel="noopener noreferrer"}, and 
+    [music](https://drekunia.bandcamp.com){: target="_blank" rel="noopener noreferrer"}. 
+    Open to new opportunities and ready to build something awesome together.
   avatar: "/assets/img/avatar.webp"
 
 # Social links
@@ -40,12 +45,12 @@ links:
   #   url: https://github.com/drekunia
   # - name: codeberg
   #   url: https://codeberg.org/drekunia
-  - name: itch.io
-    url: https://drekunia.itch.io/
+  # - name: itch.io
+  #   url: https://drekunia.itch.io/
   # - name: artstation
   #   url: https://www.artstation.com/drekunia
-  - name: bandcamp
-    url: https://drekunia.bandcamp.com
+  # - name: bandcamp
+  #   url: https://drekunia.bandcamp.com
   - name: blog
     url: https://drekunia.github.io/blog
     same_tab: true
