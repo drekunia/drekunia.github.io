@@ -21,7 +21,7 @@ author:
     Most of my work revolves around technology and design, specifically 
     [game development](https://drekunia.itch.io){: target="_blank" rel="noopener noreferrer"}, 
     [digital art](https://www.artstation.com/drekunia){: target="_blank" rel="noopener noreferrer"}, and 
-    [music](https://drekunia.bandcamp.com){: target="_blank" rel="noopener noreferrer"}. 
+    [music](https://www.subvert.fm/drekunia){: target="_blank" rel="noopener noreferrer"}. 
     Always looking for exciting new opportunities to learn and collaborate.
   avatar: "/assets/img/avatar.webp"
 
@@ -51,6 +51,8 @@ links:
   #   url: https://www.artstation.com/drekunia
   # - name: bandcamp
   #   url: https://drekunia.bandcamp.com
+  # - name: subvert
+  #   url: https://www.subvert.fm/drekunia
   - name: blog
     url: https://drekunia.github.io/blog
     same_tab: true
