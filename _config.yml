@@ -1,7 +1,7 @@
 # Site settings
 title: "drekunia"
 description: >-
-  Creating games at the intersection of code and arts. Let's connect.
+  ドレクニアの個人サイト。やっていること、好きなこと、その他いろいろ。
 url: "https://drekunia.github.io"
 twitter_username: drekunia
 image: /assets/img/og-image.png
@@ -13,23 +13,22 @@ highlighter: rouge
 # Author info
 author:
   name: "drekunia"
-  title: "Andre Kurniawan"
-  bio: >-
-    I build creative projects by leveraging 
-    [code](https://github.com/drekunia){: target="_blank" rel="noopener noreferrer"} 
-    as an art form. 
-    Most of my work revolves around technology and design, specifically 
-    [game development](https://drekunia.itch.io){: target="_blank" rel="noopener noreferrer"}, 
-    [digital art](https://www.artstation.com/drekunia){: target="_blank" rel="noopener noreferrer"}, and 
-    [music](https://www.subvert.fm/drekunia){: target="_blank" rel="noopener noreferrer"}. 
-    Always looking for exciting new opportunities to learn and collaborate.
+  title: "ドレクニア"
+  bio: |
+    普段は好きなことをしたり、気になったことを調べたりして過ごしてます。
+
+    興味のあることが多すぎて、いつもあれこれ手を出してます。
+
+    暇だったら、[ブログでも覗いてみてください](https://drekunia.github.io/blog)。
+  # bio: >-
+  #   [code](https://github.com/drekunia){: target="_blank" rel="noopener noreferrer"}
   avatar: "/assets/img/avatar.webp"
 
 # Social links
 links:
-  - name: contact/inquiries
-    url: mailto:drekunia@gmail.com
-    same_tab: true
+  # - name: contact/inquiries
+  #   url: mailto:drekunia@gmail.com
+  #   same_tab: true
   - name: instagram
     url: https://instagram.com/drekunia
   # - name: x/twitter
@@ -39,20 +38,22 @@ links:
   - name: youtube
     url: https://www.youtube.com/@drekunia
   #   bold: true
-  - name: linkedin
-    url: https://www.linkedin.com/in/drekunia
+  # - name: linkedin
+  #   url: https://www.linkedin.com/in/drekunia
+  - name: misskey
+    url: https://misskey.systems/@drekunia
   - name: github
     url: https://github.com/drekunia
   # - name: codeberg
   #   url: https://codeberg.org/drekunia
-  - name: itch.io
-    url: https://drekunia.itch.io/
-  - name: artstation
-    url: https://www.artstation.com/drekunia
+  # - name: itch.io
+  #   url: https://drekunia.itch.io/
+  # - name: artstation
+  #   url: https://www.artstation.com/drekunia
   # - name: bandcamp
   #   url: https://drekunia.bandcamp.com
-  - name: subvert
-    url: https://www.subvert.fm/drekunia
+  # - name: subvert
+  #   url: https://www.subvert.fm/drekunia
   - name: blog
     url: https://drekunia.github.io/blog
     same_tab: true
