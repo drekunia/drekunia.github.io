@@ -1,19 +1,17 @@
 /* Variables */
 :root {
-  --bg-color: #0a0a0a;
-  --text-color: #e5e5e5;
-  --text-muted: #a0a0a0;
-  --text-highlight: #eb5757;
+  --bg-color: #0b3475;
+  --text-color: #f1f1ed;
+  --text-muted: #b9cae5;
+  --text-highlight: #ffd166;
   --accent-color: #ffffff;
-  --border-color: #333333;
-  --hover-color: #1a1a1a;
+  --border-color: #47689b;
+  --hover-color: #174789;
 
-  --font-family:
-    "JetBrains Mono", monospace, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    sans-serif;
-  --font-size-base: 14px;
+  --font-family: "MS Gothic", monospace, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-size-base: 16px;
   --font-size-large: 20px;
-  --font-size-small: 12px;
+  --font-size-small: 14px;
 
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;
