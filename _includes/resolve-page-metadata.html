@@ -1,0 +1,14 @@
+{%- include resolve-localized-text.html value=site.data.localized_site_titles code=include.code -%}
+{%- assign resolved_site_title = trimmed_localized_text | default: site.data.first_site_title | normalize_whitespace | strip -%}
+{%- assign resolved_page_title = resolved_site_title -%}
+{%- if page.title and page.title != empty -%}
+    {%- assign resolved_page_title = page.title | append: ' | ' | append: resolved_site_title -%}
+{%- endif -%}
+
+{%- include resolve-localized-text.html value=site.author.name code=include.code -%}
+{%- assign resolved_author_name = trimmed_localized_text -%}
+{%- assign resolved_copyright_name = resolved_author_name | default: resolved_site_title -%}
+{%- if page.author and page.author != empty -%}
+    {%- include resolve-localized-text.html value=page.author code=include.code -%}
+    {%- assign resolved_author_name = trimmed_localized_text -%}
+{%- endif -%}

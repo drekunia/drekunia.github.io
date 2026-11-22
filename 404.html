@@ -1,12 +1,18 @@
 ---
 layout: default
 title: 404
+robots: noindex, follow
+localize_page: true
 ---
 
-<div style="margin: 0 auto; text-align: right">
-  <h1 class="site-title">404 Not Found</h1>
-  <div class="muted-title">ページが見つかりませんでした。</div>
+{% include resolve-languages.html %}
+{% for code in language_codes %}
+{% assign copy = site.data.languages[code] %}
+<div style="margin: 0 auto; text-align: right" lang="{{ code }}" data-language-copy{% if code != default_code %} hidden{% endif %}>
+  <h1 class="site-title">{{ copy.error_heading | default: english_language.error_heading | default: '404 Not Found' }}</h1>
+  <div class="muted-title">{{ copy.error_message | default: english_language.error_message | default: 'The page you’re looking for couldn’t be found.' }}</div>
   <p>
-    <a href="{{ '/' | relative_url }}" class="link">ホームに戻る</a>
+    <a href="{{ '/' | relative_url }}" class="link">{{ copy.return_home | default: english_language.return_home | default: 'Back to home' }}</a>
   </p>
 </div>
+{% endfor %}

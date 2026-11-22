@@ -1,0 +1,2 @@
+{%- include resolve-localized-text.html value=include.value code=include.code -%}
+{%- assign resolved_description = localized_text | strip_html | normalize_whitespace | strip | truncate: 160 -%}

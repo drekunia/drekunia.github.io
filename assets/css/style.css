@@ -59,6 +59,10 @@ body {
   align-items: center;
 }
 
+.homepage-profile {
+  margin: 0 auto;
+}
+
 /* Typography */
 .site-title {
   font-size: 3.5rem;
@@ -78,11 +82,17 @@ body {
   display: block;
   line-height: 1;
   letter-spacing: 0.02em;
+}
+
+.muted-title {
   margin-bottom: var(--spacing-md);
 }
 
-.bio {
+.homepage-profile > :not([hidden]) ~ .bio:not([hidden]) {
   margin-top: var(--spacing-md);
+}
+
+.bio {
   font-size: var(--font-size-base);
   line-height: 1.7;
 }
@@ -119,11 +129,47 @@ body {
   opacity: 0.15;
 }
 
+/* Language switcher */
+.language-switcher:not([hidden]) {
+  position: absolute;
+  top: var(--spacing-xs);
+  right: var(--spacing-xs);
+  z-index: 1;
+}
+
+.container:has(> .language-switcher:not([hidden])) {
+  padding-top: var(--spacing-xl);
+}
+
+.language-switcher select {
+  appearance: auto;
+  display: block;
+  padding: 1px 2px;
+  border: 1px solid #808080;
+  border-radius: 0;
+  background: #fff;
+  color: #000;
+  color-scheme: light;
+  font: 0.75rem Arial, sans-serif;
+}
+
+.language-switcher select:focus {
+  border-color: #000;
+  outline: none;
+}
+
 /* Links */
 .links {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xs);
+}
+
+.links:not(:has(> :not([hidden]))) {
+  display: none;
+}
+
+.homepage-profile > :not([hidden]) ~ .links:has(> :not([hidden])) {
   margin-top: var(--spacing-lg);
 }
 
@@ -164,10 +210,13 @@ body {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  margin-bottom: var(--spacing-lg);
   display: block;
   /* margin-left: auto; */
   /* margin-right: auto; */
+}
+
+.avatar:not(:last-child) {
+  margin-bottom: var(--spacing-lg);
 }
 
 /* Selection */

@@ -1,41 +1,82 @@
 ---
 layout: default
+homepage: true
 ---
 
-<div style="margin: 0 auto">
-    <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}" class="avatar" />
-    <h1 class="site-title">{{ site.author.name | downcase }}</h1>
-    <div class="author-title">{{ site.author.title }}</div>
+{% include resolve-languages.html %}
+{% assign content_languages = language_codes %}
+{% if page.homepage_language %}
+    {% assign content_languages = page.homepage_language | split: ',' %}
+{% endif %}
+{% assign author = site.author %}
+<div class="homepage-profile">
+    {% assign avatar_url = author.avatar | default: '' | strip %}
+    {% for code in content_languages %}
+        {% include resolve-localized-text.html value=author.name code=code %}
+        {% assign name_text = trimmed_localized_text %}
+        {% assign name_language = localized_language %}
+        {% assign profile_mode = localized_mode %}
+        {% include resolve-localized-text.html value=author.title code=code %}
+        {% assign title_text = trimmed_localized_text %}
+        {% assign profile_mode = profile_mode | default: localized_mode %}
+        {% if avatar_url != empty or name_text != empty or title_text != empty %}
+            <div{% if profile_mode %} data-language-copy="{{ profile_mode }}"{% if profile_mode != default_code %} hidden{% endif %}{% endif %}>
+                {% unless avatar_url == empty %}
+                <img src="{{ avatar_url | relative_url }}" alt="{{ name_text | escape }}" class="avatar"{% if name_language %} lang="{{ name_language }}"{% endif %} />
+                {% endunless %}
+                {% unless name_text == empty %}
+                <h1 class="site-title"{% if name_language %} lang="{{ name_language }}"{% endif %}>{{ name_text | downcase | escape }}</h1>
+                {% endunless %}
+                {% unless title_text == empty %}
+                <div class="author-title"{% if localized_language %} lang="{{ localized_language }}"{% endif %}>{{ title_text | escape }}</div>
+                {% endunless %}
+            </div>
+        {% endif %}
+        {% unless profile_mode %}{% break %}{% endunless %}
+    {% endfor %}
 
-    <div class="bio">{{ site.author.bio | markdownify }}</div>
-
-    <div class="links">
-        {% for link in site.links %}
-        <div>
-            <a
-                href="{{ link.url }}"
-                class="link"
-                {%
-                unless
-                link.same_tab
-                %}
-                target="_blank"
-                rel="me noopener noreferrer"
-                {%
-                endunless
-                %}
-                {%
-                if
-                link.hidden
-                %}
-                style="display: none;"
-                hidden
-                {%
-                endif
-                %}
-                >{% if link.bold %}<strong>{{ link.name }}</strong>{% else %}{{link.name}}{% endif %}</a
-            >
-        </div>
+    {% assign bio = author.bio %}
+    {% if bio and bio != empty %}
+        {% for code in content_languages %}
+            {% include resolve-localized-text.html value=bio code=code %}
+            {% unless trimmed_localized_text == empty %}
+                <div class="bio"{% if localized_language %} lang="{{ localized_language }}"{% endif %}{% if localized_mode %} data-language-copy="{{ localized_mode }}"{% if localized_mode != default_code %} hidden{% endif %}{% endif %}>
+                    {{ localized_text | markdownify }}
+                </div>
+            {% endunless %}
+            {% unless localized_mode %}{% break %}{% endunless %}
         {% endfor %}
+    {% endif %}
+
+    {% capture link_rows %}
+        {% for link in site.links %}
+            {% assign link_url = link.url | default: '' | strip %}
+            {% if link_url == empty %}{% continue %}{% endif %}
+            {% for code in content_languages %}
+                {% include resolve-localized-text.html value=link.name code=code %}
+                {% if trimmed_localized_text == empty %}
+                    {% include resolve-link-url-label.html url=link_url %}
+                    {% assign localized_text = link_url_label | escape %}
+                    {% assign localized_language = nil %}
+                    {% assign trimmed_localized_text = localized_text %}
+                {% endif %}
+                {% unless trimmed_localized_text == empty %}
+                    <div{% if link.hidden %} hidden{% elsif localized_mode %} data-language-copy="{{ localized_mode }}"{% if localized_mode != default_code %} hidden{% endif %}{% endif %}>
+                        <a href="{{ link_url | escape }}" class="link"
+                            {% if localized_language %}lang="{{ localized_language }}"{% endif %}
+                            {% unless link.same_tab %}target="_blank" rel="me noopener noreferrer"{% endunless %}
+                            {% if link.hidden %}style="display: none;" hidden{% endif %}
+                        >{% if link.bold %}<strong>{{ localized_text }}</strong>{% else %}{{ localized_text }}{% endif %}</a>
+                    </div>
+                {% endunless %}
+                {% unless localized_mode %}{% break %}{% endunless %}
+            {% endfor %}
+        {% endfor %}
+    {% endcapture %}
+    {% assign link_rows = link_rows | strip %}
+    {% unless link_rows == empty %}
+    <div class="links">
+        {{ link_rows }}
     </div>
+    {% endunless %}
 </div>

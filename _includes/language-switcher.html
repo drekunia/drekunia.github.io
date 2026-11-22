@@ -1,0 +1,26 @@
+{% assign english_switcher = english_language.switcher | default: 'Language' %}
+{% assign default_language = site.data.languages[default_code] %}
+<div class="language-switcher" hidden>
+  <select aria-label="{{ default_language.switcher | default: english_switcher | escape }}"{% if page.homepage_language %} data-page-language="{{ page.homepage_language | escape }}"{% endif %}>
+    {% for code in language_codes %}
+    {% assign copy = site.data.languages[code] %}
+    {% include resolve-description.html value=include.description code=code %}
+    {% include resolve-page-metadata.html code=code %}
+    {% include resolve-open-graph-locale.html code=code %}
+    {% assign homepage_url = site.data.homepage_language_urls[code] %}
+    <option value="{{ code | escape }}" lang="{{ code | escape }}"
+      {% if copy.name and copy.name != empty %}aria-label="{{ copy.name | escape }}"{% endif %}
+      data-switcher-label="{{ copy.switcher | default: english_switcher | escape }}"
+      data-page-title="{{ resolved_page_title | escape }}"
+      data-site-title="{{ resolved_site_title | escape }}"
+      data-copyright-name="{{ resolved_copyright_name | escape }}"
+      {% unless resolved_author_name == empty %}data-author-name="{{ resolved_author_name | escape }}"{% endunless %}
+      {% if page.homepage %}
+        {% if homepage_url or page.homepage_language %}data-url="{{ homepage_url | default: '/' | relative_url }}"{% endif %}
+      {% endif %}
+      {% unless resolved_description == empty %}data-description="{{ resolved_description | escape }}"{% endunless %}
+      {% unless resolved_locale == empty %}data-og-locale="{{ resolved_locale | escape }}"{% endunless %}
+      {% if code == default_code %}selected{% endif %}>{{ code | escape }}</option>
+    {% endfor %}
+  </select>
+</div>

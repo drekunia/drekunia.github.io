@@ -1,0 +1,72 @@
+{%- assign link_url = include.url | strip -%}
+{%- assign url_before_fragment = link_url | split: '#' | first | default: '' -%}
+{%- assign fragment = link_url | remove_first: url_before_fragment -%}
+{%- assign url_without_query = url_before_fragment | split: '?' | first | default: '' -%}
+{%- assign url_path = url_without_query -%}
+{%- assign label_without_fragment = url_without_query -%}
+
+{%- assign authority_and_path = '' -%}
+{%- assign url_prefix = url_without_query | slice: 0, 2 -%}
+{%- if url_prefix == '//' -%}
+    {%- assign authority_and_path = url_without_query | remove_first: '//' -%}
+{%- elsif url_without_query contains '://' -%}
+    {%- assign scheme = url_without_query | split: '://' | first -%}
+    {%- unless scheme == empty or scheme contains '/' or scheme contains ':' -%}
+        {%- assign scheme_prefix = scheme | append: '://' -%}
+        {%- assign authority_and_path = url_without_query | remove_first: scheme_prefix -%}
+    {%- endunless -%}
+{%- endif -%}
+
+{%- assign authority = authority_and_path | split: '/' | first -%}
+{%- if authority and authority != empty -%}
+    {%- assign host_and_port = authority | split: '@' | last -%}
+    {%- assign host_prefix = host_and_port | slice: 0, 1 -%}
+    {%- if host_prefix == '[' -%}
+        {%- assign domain = host_and_port | split: ']' | first | append: ']' -%}
+    {%- else -%}
+        {%- assign domain = host_and_port | split: ':' | first -%}
+    {%- endif -%}
+    {%- if domain and domain != empty -%}
+        {%- assign url_path = authority_and_path | remove_first: authority -%}
+        {%- assign label_without_fragment = domain | append: url_path -%}
+    {%- endif -%}
+{%- endif -%}
+{%- comment -%} Splitting drops trailing empty segments. {%- endcomment -%}
+{%- assign label_segments = label_without_fragment | split: '/' -%}
+{%- for segment in label_segments -%}
+    {%- unless segment == empty -%}
+        {%- break -%}
+    {%- endunless -%}
+    {%- assign label_segments = label_segments | shift -%}
+{%- endfor -%}
+{%- assign trimmed_label = label_segments | join: '/' -%}
+{%- if trimmed_label == empty and fragment == empty and label_without_fragment != empty -%}
+    {%- assign trimmed_label = '/' -%}
+{%- endif -%}
+{%- assign path_filename = url_path | split: '/' | last | downcase -%}
+{%- if path_filename contains '.' -%}
+    {%- unless path_filename contains ':' -%}
+        {%- capture extensions -%}
+            tar.gz tar.bz2 tar.xz html htm shtml xhtml php php3 php4 php5 phtml
+            asp aspx jsp jspx cgi cfm cfml pl py rb
+            txt text md markdown rst pdf doc docx xls xlsx ppt pptx epub
+            csv tsv json xml yaml yml css js mjs ts wasm
+            svg png jpg jpeg gif webp avif ico bmp tif tiff
+            mp3 mp4 m4a wav ogg webm mov zip tar tgz gz bz2 xz 7z rar
+        {%- endcapture -%}
+        {%- assign extensions = extensions | split: ' ' -%}
+        {%- for extension in extensions -%}
+            {%- assign suffix = extension | prepend: '.' -%}
+            {%- assign suffix_offset = path_filename.size | minus: suffix.size -%}
+            {%- if suffix_offset > 0 -%}
+                {%- assign actual_suffix = path_filename | slice: suffix_offset, suffix.size -%}
+                {%- if actual_suffix == suffix -%}
+                    {%- assign label_length = trimmed_label.size | minus: suffix.size -%}
+                    {%- assign trimmed_label = trimmed_label | slice: 0, label_length -%}
+                    {%- break -%}
+                {%- endif -%}
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endunless -%}
+{%- endif -%}
+{%- assign link_url_label = trimmed_label | append: fragment -%}

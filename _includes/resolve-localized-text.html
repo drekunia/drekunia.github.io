@@ -1,0 +1,49 @@
+{%- assign localized_text = nil -%}
+{%- assign localized_language = nil -%}
+{%- assign localized_mode = nil -%}
+{%- assign value_as_string = include.value | append: '' -%}
+{%- if include.value == value_as_string -%}
+    {%- assign localized_text = include.value -%}
+{%- elsif include.value and include.value != empty -%}
+    {%- if include.value.size == 1 -%}
+        {%- assign only_translation = include.value | first -%}
+        {%- assign localized_language = only_translation[0] -%}
+        {%- assign localized_text = only_translation[1] -%}
+    {%- else -%}
+        {%- assign localized_mode = include.code -%}
+        {%- assign requested_code = include.code | downcase -%}
+        {%- assign requested_primary = requested_code | split: '-' | first -%}
+        {%- assign requested_alias = nil -%}
+        {%- case requested_code -%}
+            {%- when 'en-uk' -%}{%- assign requested_alias = 'en-gb' -%}
+            {%- when 'en-gb' -%}{%- assign requested_alias = 'en-uk' -%}
+        {%- endcase -%}
+        {%- assign best_rank = -1 -%}
+        {%- for translation in include.value -%}
+            {%- assign candidate = translation[0] | downcase -%}
+            {%- assign candidate_primary = candidate | split: '-' | first -%}
+            {%- assign candidate_text = translation[1] | strip -%}
+            {%- if candidate_text == empty -%}{%- continue -%}{%- endif -%}
+            {%- assign rank = -1 -%}
+            {%- if candidate == requested_code -%}
+                {%- assign rank = 5 -%}
+            {%- elsif candidate == requested_alias -%}
+                {%- assign rank = 4 -%}
+            {%- elsif candidate == requested_primary -%}
+                {%- assign rank = 3 -%}
+            {%- elsif requested_code == requested_primary and candidate_primary == requested_primary -%}
+                {%- assign rank = 2 -%}
+            {%- elsif candidate == 'en' -%}
+                {%- assign rank = 1 -%}
+            {%- elsif candidate_primary == 'en' -%}
+                {%- assign rank = 0 -%}
+            {%- endif -%}
+            {%- if rank > best_rank -%}
+                {%- assign best_rank = rank -%}
+                {%- assign localized_language = translation[0] -%}
+                {%- assign localized_text = translation[1] -%}
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endif -%}
+{%- endif -%}
+{%- assign trimmed_localized_text = localized_text | strip -%}

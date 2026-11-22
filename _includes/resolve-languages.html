@@ -1,0 +1,36 @@
+{%- assign language_codes = '' | split: ',' -%}
+{%- assign normalized_language_codes = '' | split: ',' -%}
+{%- assign english_code = nil -%}
+{%- assign configured_default = site.default_language | strip | downcase -%}
+{%- assign configured_alias = nil -%}
+{%- case configured_default -%}
+    {%- when 'en-uk' -%}{%- assign configured_alias = 'en-gb' -%}
+    {%- when 'en-gb' -%}{%- assign configured_alias = 'en-uk' -%}
+{%- endcase -%}
+{%- assign configured_code = nil -%}
+{%- assign configured_alias_code = nil -%}
+{%- for language in site.data.languages -%}
+    {%- assign code = language[0] -%}
+    {%- assign normalized_code = code | downcase -%}
+    {%- unless normalized_language_codes contains normalized_code -%}
+        {%- assign language_codes = language_codes | push: code -%}
+        {%- assign normalized_language_codes = normalized_language_codes | push: normalized_code -%}
+        {%- if normalized_code == configured_default -%}
+            {%- assign configured_code = code -%}
+        {%- elsif normalized_code == configured_alias -%}
+            {%- assign configured_alias_code = code -%}
+        {%- endif -%}
+        {%- assign primary_language = normalized_code | split: '-' | first -%}
+        {%- if normalized_code == 'en' -%}
+            {%- assign english_code = code -%}
+        {%- elsif english_code == nil and primary_language == 'en' -%}
+            {%- assign english_code = code -%}
+        {%- endif -%}
+    {%- endunless -%}
+{%- endfor -%}
+{%- if language_codes == empty -%}
+    {%- assign language_codes = language_codes | push: 'en' -%}
+{%- endif -%}
+{%- assign first_code = language_codes | first -%}
+{%- assign default_code = page.homepage_language | default: configured_code | default: configured_alias_code | default: first_code -%}
+{%- assign english_language = site.data.languages[english_code] -%}

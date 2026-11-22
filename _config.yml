@@ -1,7 +1,13 @@
 # Site settings
+default_language: en
 title: "drekunia"
-description: >-
-  ドレクニアの個人サイト。やっていること、好きなこと、その他いろいろ。
+description:
+  en: >-
+    drekunia’s personal site. What I do, what I like, and a bit of everything.
+  ja: >-
+    ドレクニアの個人サイト。やっていること、好きなこと、その他いろいろ。
+  id: >-
+    Web pribadi drekunia. Apa yang aku kerjakan, apa yang aku suka, dan sedikit tentang segala hal.
 url: "https://drekunia.github.io"
 twitter_username: drekunia
 image: /assets/img/og-image.png
@@ -14,12 +20,21 @@ highlighter: rouge
 author:
   name: "drekunia"
   title: "ドレクニア"
-  bio: |
-    普段は好きなことをしたり、気になったことを調べたりして過ごしてます。
-    興味のあることが多すぎて、いつもあれこれ手を出してます。
-    暇だったら、[ブログでも覗いてみてください](https://drekunia.github.io/blog)。
-  # bio: >-
-  #   [code](https://github.com/drekunia){: target="_blank" rel="noopener noreferrer"}
+  bio:
+    en: |
+      I usually spend my time doing things I enjoy and looking into whatever catches my interest.
+      I'm interested in way too many things, so I'm always dabbling in a bit of everything.
+
+      If you have some time, feel free to [check out my blog](https://drekunia.github.io/blog).
+    ja: |
+      普段は好きなことをしたり、気になったことを調べたりして過ごしてます。
+      興味のあることが多すぎて、いつもあれこれ手を出してます。
+
+      暇だったら、[ブログでも覗いてみてください](https://drekunia.github.io/blog)。
+    id: |
+      Aku sering ngabisin waktu buat hal-hal yang aku suka atau cari tahu soal apa aja yang bikin penasaran. Saking banyaknya yang menarik, aku jadi sering nyobain macam-macam hal.
+
+      Kalau lagi senggang, [mampir ke blogku](https://drekunia.github.io/blog) juga, ya.
   avatar: "/assets/img/avatar.webp"
 
 # Social links

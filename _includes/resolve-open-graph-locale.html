@@ -1,0 +1,6 @@
+{%- assign locale_language = site.data.languages[include.code] -%}
+{%- assign resolved_locale = page.locale | default: locale_language.locale | strip -%}
+{%- assign locale_code = include.code | downcase -%}
+{%- if resolved_locale == empty and locale_code == 'en' -%}
+  {%- assign resolved_locale = 'en_US' -%}
+{%- endif -%}
