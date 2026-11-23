@@ -7,7 +7,7 @@ description:
   ja: >-
     ドレクニアの個人サイト。やっていること、好きなこと、その他いろいろ。
   id: >-
-    Web pribadi drekunia. Apa yang aku kerjakan, apa yang aku suka, dan sedikit tentang segala hal.
+    Web pribadi drekunia. Apa yang gw kerjain, apa yang gw suka, dan sedikit tentang segala hal.
 url: "https://drekunia.github.io"
 twitter_username: drekunia
 image: /assets/img/og-image.png
@@ -22,19 +22,19 @@ author:
   title: "ドレクニア"
   bio:
     en: |
-      I usually spend my time doing things I enjoy and looking into whatever catches my interest.
-      I'm interested in way too many things, so I'm always dabbling in a bit of everything.
+      I'm having a bit of an identity crisis. Not really sure how to introduce myself or what to put in my bio. 
+      All I can say is I code sometimes.
 
-      If you have some time, feel free to [check out my blog](https://drekunia.github.io/blog).
+      If you care enough, feel free to [check out my blog](https://drekunia.github.io/blog).
     ja: |
-      普段は好きなことをしたり、気になったことを調べたりして過ごしてます。
-      興味のあることが多すぎて、いつもあれこれ手を出してます。
+      自分が何者なのかよくわからなくて、自己紹介やプロフィールに何を書けばいいのかもわからない。
+      とりあえず、たまにコードを書いてます。
 
-      暇だったら、[ブログでも覗いてみてください](https://drekunia.github.io/blog)。
+      もし興味があれば、[ブログでも覗いてみてください](https://drekunia.github.io/blog)。
     id: |
-      Aku sering ngabisin waktu buat hal-hal yang aku suka atau cari tahu soal apa aja yang bikin penasaran. Saking banyaknya yang menarik, aku jadi sering nyobain macam-macam hal.
+      Rada krisis identitas. Bingung mau ngenalin diri gimana atau nulis apa di bio. Yang jelas, kadang-kadang gw ngoding.
 
-      Kalau lagi senggang, [mampir ke blogku](https://drekunia.github.io/blog) juga, ya.
+      Kalau lagi selo, boleh [mampir ke blog gw](https://drekunia.github.io/blog).
   avatar: "/assets/img/avatar.webp"
 
 # Social links
@@ -44,8 +44,6 @@ links:
   #   same_tab: true
   - name: instagram
     url: https://instagram.com/drekunia
-  # - name: x/twitter
-  #   url: https://x.com/drekunia
   # - name: bluesky
   #   url: https://bsky.app/profile/drekunia.bsky.social
   - name: youtube
@@ -53,7 +51,11 @@ links:
   #   bold: true
   # - name: linkedin
   #   url: https://www.linkedin.com/in/drekunia
-  - name: misskey
+  - name: x/twitter
+    url: https://x.com/drekunia
+  - name:
+      en: "misskey（日本語）"
+      ja: misskey
     url: https://misskey.systems/@drekunia
   - name: github
     url: https://github.com/drekunia
