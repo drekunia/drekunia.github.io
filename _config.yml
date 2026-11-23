@@ -53,9 +53,7 @@ links:
   #   url: https://www.linkedin.com/in/drekunia
   - name: x/twitter
     url: https://x.com/drekunia
-  - name:
-      en: "misskey（日本語）"
-      ja: misskey
+  - name: misskey
     url: https://misskey.systems/@drekunia
   - name: github
     url: https://github.com/drekunia
